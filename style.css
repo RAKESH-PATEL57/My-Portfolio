@@ -826,6 +826,15 @@ span
     width: 90%;
 }
 
+/*************   Starting Links to our projects   ***********/
+a
+{
+    color: var(--color);
+}
+
+/*************  Ending Links to our projects   ***********/
+
+
 .contact
 {
     min-height: auto;
@@ -1143,7 +1152,7 @@ section:nth-child(odd) .animate.scroll
     }
 }
 
-@media (max-width: 520px)
+/* @media (max-width: 520px)
 {
     html
     {
@@ -1172,7 +1181,7 @@ section:nth-child(odd) .animate.scroll
         width: 38px;
         height: 38px;
     }
-}
+} */
 
 @media (max-width: 462px)
 {
@@ -1200,6 +1209,12 @@ section:nth-child(odd) .animate.scroll
 
 @media (max-width: 515px)
 {
+     
+    html
+    {
+      font-size: 52%;  
+    }
+
     .home
     {
         size: 100%;
