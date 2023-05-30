@@ -1053,11 +1053,6 @@ section:nth-child(odd) .animate.scroll
         padding: 0 4%;
     }
 
-
-    /* .footer
-    {
-        padding: 2rem 4%;
-    } */
     .atom
     {  
        height: 30rem;
@@ -1207,6 +1202,43 @@ section:nth-child(odd) .animate.scroll
 
 }
 
+@media (max-width:700px)
+{
+    html
+    {
+      font-size: 53%;  
+    }
+
+    .home
+    {
+        size: 100%;
+        justify-content: center;
+    }
+
+    .home-content
+    {
+        margin-bottom: 35rem;
+    }
+
+    .atom
+    {
+        position: absolute;
+        opacity: 1;
+        margin-top: 30rem;
+        margin-right: 12rem;
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .home-content                /*to do:- center all */
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
 @media (max-width: 515px)
 {
      
@@ -1244,5 +1276,3 @@ section:nth-child(odd) .animate.scroll
         text-align: center;
     }
 }
-
-
