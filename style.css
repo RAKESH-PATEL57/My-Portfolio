@@ -19,6 +19,8 @@
     --text-color:#ededed;
     --main-color:#00abf0;
     --color:#40ff9c;
+    --hover-color:linear-gradient(130deg,#ff0000,#1900ff8b,#00ff9d);
+
 }
 
 .dark-mode:hover
@@ -27,16 +29,83 @@
     --bg-color:#000000;
     --second-bg-color:#181616;
     --main-color:#f700ff;
+}
+.neon-mode:hover   /* to do */
+{
+    --bg-color:#000000;
+    --second-bg-color:#000000;
+    --text-color:#000000;
+    --main-color:#000000;
+     /* -webkit-text-stroke: #fff;
+     -webkit-text-stroke-width: 0.5px; */
+     text-shadow: 0rem 0rem 2rem #ff002f;
+     
+     .logo
+     {
+        -webkit-text-stroke: #fff;
+        -webkit-text-stroke-width: 0.3px;
+     }
 
-    /* --text-color:#ededed; */
-    
-    
-    /* --bg-color:rgb(0, 0, 0);
-    --second-bg-color:rgb(0, 0, 0);
-    --text-color:#ffffff; */
-    /* animation:animateBg 5s linear infinite ; 
-    -webkit-filter: drop-shadow(0 2px 7px rgba(255, 0, 0, 0.5));
-     filter: drop-shadow(0 2px 7px rgba(72, 0, 255, 0.5)); */
+     .navbar a
+     {
+        /* -webkit-text-stroke: #fff;
+        -webkit-text-stroke-width: 0.2px; */
+        --main-color:#00abf0;
+        text-shadow: 0rem 0rem 10px #00ffff;
+     }
+
+     .home-content h1 ,.text-animate h3
+     {
+         -webkit-text-stroke: #fff;
+         -webkit-text-stroke-width: 0.4px;
+     }
+     .home-content p
+     {
+         color:#ededed;
+         font-weight: 400;
+         text-shadow: 0rem 0rem 20px #00ffff;
+     }
+
+     .btn-box .btn
+     {
+        border: .1rem solid #fff;
+        color: #00ffff;
+     }
+     
+     .btn-box .btn:hover
+     {
+        box-shadow: 0rem 0rem 3rem #ea00ff;
+        --bg-color:#081b29;
+        --main-color:#00abf0;
+        color: #e1ff00;
+     }
+
+     .btn-box .btn:nth-child(2):hover
+     {
+        background: #00abf0;
+     }
+
+     .btn-box .btn:nth-child(2)::before
+     {
+         background:var(--bg-color);
+     }
+
+      .home-sci a
+      {
+       color: purple;
+       border: 3px solid purple;
+      }
+ 
+      .home-sci a:hover
+      {
+       background-color: purple; 
+       background: #00abf0;
+       color: #00abf0;
+       border: 3px solid purple;
+       box-shadow: 0rem 0rem 2rem #00abf0;
+      }
+
+
 }
 
 html
@@ -1276,3 +1345,5 @@ section:nth-child(odd) .animate.scroll
         text-align: center;
     }
 }
+
+
