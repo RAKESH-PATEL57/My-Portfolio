@@ -55,8 +55,13 @@ window.onscroll = () => {
 
 // dark mode light
 let darkModeIcon = document.querySelector('#darkMode-icon');
-
 darkModeIcon.onclick = () => {
-    darkModeIcon.classList.toggle('bx-sun');
-    document.body.classList.toggle('dark-mode');
+    darkModeIcon.classList.toggle('bx-sun');  
+    document.body.classList.toggle('dark-mode');   
+};
+
+let neonModeIcon = document.querySelector('#Neon');  
+neonModeIcon.onclick = () => {   
+    // neonModeIcon.classList.toggle('bx-shower');    
+    document.body.classList.toggle('neon-mode');
 };
