@@ -36,8 +36,8 @@
     --second-bg-color:#000000;
     --text-color:#000000;
     --main-color:#000000;
-     /* -webkit-text-stroke: #fff;
-     -webkit-text-stroke-width: 0.5px; */
+     -webkit-text-stroke: #fff;
+     -webkit-text-stroke-width: 0.3px;
      text-shadow: 0rem 0rem 2rem #ff002f;
      
      .logo
@@ -48,8 +48,6 @@
 
      .navbar a
      {
-        /* -webkit-text-stroke: #fff;
-        -webkit-text-stroke-width: 0.2px; */
         --main-color:#00abf0;
         text-shadow: 0rem 0rem 10px #00ffff;
      }
@@ -105,7 +103,7 @@
  
       .home-sci a:hover
       {
-       background-color: purple; 
+       background-color: #ea00ff; 
        background: #00abf0;
        color: #00abf0;
        border: 2px solid white;
@@ -122,6 +120,20 @@
         animation: homeBgtext 6s linear infinite;
         animation-delay: 2s;
       }
+
+    
+
+       .education-column .education-box
+        {
+            box-shadow: 0rem 0rem 5rem #00abf0;
+        }
+
+        .education-box .education-content::before
+        {
+            background: transparent;
+            border-radius: 50%;
+        }
+
 
 }
 
@@ -680,7 +692,7 @@ span
     gap: 5rem;
 }
 
-.education-row .education-column            /* ** one problem is here column problem **/
+.education-row .education-column          
 {
     flex: 1 1 40rem;
 } 
