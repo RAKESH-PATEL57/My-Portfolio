@@ -36,9 +36,9 @@
     --second-bg-color:#000000;
     --text-color:#000000;
     --main-color:#000000;
-     -webkit-text-stroke: #fff;
-     -webkit-text-stroke-width: 0.3px;
-     text-shadow: 0rem 0rem 2rem #ff002f;
+     /* -webkit-text-stroke: #fff;
+     -webkit-text-stroke-width: 0.3px; */
+     /* text-shadow: 0rem 0rem 2rem #ff002f; */
      
      .logo
      {
@@ -123,16 +123,47 @@
 
     
 
-       .education-column .education-box
+       /* .education-column .education-box
         {
             box-shadow: 0rem 0rem 5rem #00abf0;
-        }
+        } */
 
         .education-box .education-content::before
         {
             background: transparent;
             border-radius: 50%;
         }
+
+        .education-content .content
+        {
+            color: #fff;
+            border: .2rem solid #ea00ff;
+        }
+
+        .education-content .content::before
+        {
+             background:#081b29;
+        }
+
+        .education-content .content:hover
+        {
+            border: .2rem solid #fff;
+            box-shadow: 0rem 0rem 1rem #00abf0;
+            background:#081b29;
+            transition: .5s linear;
+        }
+
+
+        .education-content .content:hover::before
+        {
+            width: 100%;
+        }
+
+        .education-content .content .year
+        {
+            color: #00abf0;
+        }
+
 
 
 }
