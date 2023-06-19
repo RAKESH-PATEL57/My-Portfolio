@@ -13,7 +13,7 @@
 
 :root
 {
-    /* --bg-color:linear-gradient(40deg,#ffe100,#001aff,#000000); */
+    /* --bg-color:linear-gradient(to bottom left, #000066 0%, #660033 100%); */
     --bg-color:#081b29;
     --second-bg-color:#112e42;
     --text-color:#ededed;
@@ -190,6 +190,7 @@ body
     padding: 2rem 9%;
     background: transparent;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -211,6 +212,7 @@ body
 
 .navbar
 {
+    margin-top: 3rem;
     position: relative;
 }
 
@@ -219,6 +221,7 @@ body
     font-size: 1.7rem;
     color:var(--text-color);
     font-weight: 500;
+    padding: 2rem;
     margin-left: 3.5rem;
     transition: .3s;
 }
