@@ -13,7 +13,7 @@
 
 :root
 {
-    /* --bg-color:linear-gradient(to bottom left, #000066 0%, #660033 100%); */
+    /* --bg-color:linear-gradient(40deg,#ffe100,#001aff,#000000); */
     --bg-color:#081b29;
     --second-bg-color:#112e42;
     --text-color:#ededed;
@@ -190,7 +190,6 @@ body
     padding: 2rem 9%;
     background: transparent;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
@@ -202,6 +201,72 @@ body
     background:var(--bg-color);
 }
 
+/*  Neon Progress Bar Start */
+
+::-webkit-scrollbar
+{
+    width: 0;
+}
+
+#scrollPath
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    height: 100%;
+    background: rgba(255,255, 255,0.05)\;
+}
+
+#progressbar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    border-bottom: .3rem solid #fff;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 5s linear infinite;       
+}
+
+@keyframes animate
+{
+    0%,100%
+    {
+        filter: hue-rotate(0deg);
+    }
+    50%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar::before
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px);
+}
+
+#progressbar::after
+{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px);
+}
+
+/*  Neon Progress Bar End */
+
 .logo
 {
     position: relative;
@@ -212,7 +277,6 @@ body
 
 .navbar
 {
-    margin-top: 3rem;
     position: relative;
 }
 
@@ -221,7 +285,6 @@ body
     font-size: 1.7rem;
     color:var(--text-color);
     font-weight: 500;
-    padding: 2rem;
     margin-left: 3.5rem;
     transition: .3s;
 }
