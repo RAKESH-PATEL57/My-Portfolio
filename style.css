@@ -35,6 +35,7 @@
     --second-bg-color:#181616;
     --main-color:#f700ff;
 }
+
 .neon-mode  /* to do */
 {
     --bg-color:#000000;
@@ -47,6 +48,11 @@
     --btn-color:#081b29;
     --borderbtn-color:#fff;
 
+    #home
+    {
+        border:#00ff9d;
+    }
+
      .logo
      {
         -webkit-text-stroke: #fff;
@@ -57,6 +63,98 @@
      {
         --main-color:#00abf0;
         text-shadow: 0rem 0rem 10px #00ffff;
+     }
+
+      /* Neon Progress Bar Start 
+
+        ::-webkit-scrollbar
+        {
+            width: 0;
+        }
+
+        #scrollPath
+        {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 2rem;
+            height: 100%;
+            background: rgba(255,255, 255,0.05);
+        }
+
+        #progressbar
+        {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: .8rem;
+            height: 100%;
+            border-bottom: .3rem solid #fff;
+            background: linear-gradient(to top, #008aff,#00ffe7);
+            animation: animate 5s linear infinite;       
+        }
+
+        @keyframes animate
+        {
+            0%,100%
+            {
+                filter: hue-rotate(0deg);
+            }
+            50%
+            {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        #progressbar::before
+        {
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #008aff,#00ffe7);
+            filter: blur(10px);
+        }
+
+        #progressbar::after
+        {
+            content:'';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #008aff,#00ffe7);
+            filter: blur(10px);
+        }
+
+         Neon Progress Bar End */
+
+     #home
+     {
+        border: .15rem solid rgb(0, 195, 255);
+     }    
+
+     #about
+     {
+        border: .15rem solid rgb(0, 195, 255);
+     }
+
+     #education
+     {
+        border: .15rem solid rgb(0, 195, 255);
+     }
+
+     #skills
+     {
+        border: .15rem solid rgb(0, 195, 255);
+     }
+
+     #contact
+     {
+        border: .15rem solid rgb(0, 195, 255);
      }
 
      .home-content h1
@@ -72,7 +170,12 @@
          text-shadow: 0rem 0rem 20px #00ffff;
      }
 
-     
+     .btn-box .btn
+     {
+        background:var(--bg-color);
+        color: #ea00ff;
+     }
+
      .btn-box .btn:hover
      {
         box-shadow: 0rem 0rem 3rem #00abf0;
@@ -80,6 +183,7 @@
         --main-color:#00abf0;
         color: #00ffff;
      }
+
      
      .btn-box .btn:nth-child(2)
      {
@@ -105,12 +209,17 @@
  
       .home-sci a:hover
       {
-       background-color: #ea00ff; 
-       background: #00abf0;
-       color: #00abf0;
+       background: #000000;
+       color: #00b7ff;
        border: 2px solid white;
        box-shadow: 0rem 0rem 2rem #00abf0;
       }
+
+      .home-sci a:hover::before
+      {
+        background:#081b29;
+      }
+
       .home-content .text-animate h3
       {
         font-size: 3.2rem;
@@ -200,72 +309,6 @@ body
 {
     background:var(--bg-color);
 }
-
-/*  Neon Progress Bar Start */
-
-::-webkit-scrollbar
-{
-    width: 0;
-}
-
-#scrollPath
-{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 2rem;
-    height: 100%;
-    background: rgba(255,255, 255,0.05)\;
-}
-
-#progressbar
-{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 2rem;
-    border-bottom: .3rem solid #fff;
-    background: linear-gradient(to top, #008aff,#00ffe7);
-    animation: animate 5s linear infinite;       
-}
-
-@keyframes animate
-{
-    0%,100%
-    {
-        filter: hue-rotate(0deg);
-    }
-    50%
-    {
-        filter: hue-rotate(360deg);
-    }
-}
-
-#progressbar::before
-{
-    content:'';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 10%;
-    background: linear-gradient(to top, #008aff,#00ffe7);
-    filter: blur(10px);
-}
-
-#progressbar::after
-{
-    content:'';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    background: linear-gradient(to top, #008aff,#00ffe7);
-    filter: blur(10px);
-}
-
-/*  Neon Progress Bar End */
 
 .logo
 {
