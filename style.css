@@ -40,7 +40,7 @@
 {
     --bg-color:#000000;
     --second-bg-color:#000000;
-    --text-color:#000000;
+    --text-color:#ffffff;
 
 
     --h3main-color:#00abf0;
@@ -160,6 +160,7 @@
 
      .home-content h1
      {
+          color:#000000;
          -webkit-text-stroke: #fff;
          -webkit-text-stroke-width: 0.7px;
          text-shadow: 0rem 0rem 1.4rem #00ffff;
@@ -306,12 +307,6 @@
             transition: .5s linear;
         }
 
-                
-
-        .skills-box .skills-content:hover::before
-        {
-            width: 100%;
-        }
 
 }
 
