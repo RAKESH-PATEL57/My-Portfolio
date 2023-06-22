@@ -1452,29 +1452,6 @@ section:nth-child(odd) .animate.scroll
     }
 } */
 
-@media (max-width: 462px)
-{
-    .atom
-    {
-        position: absolute;
-    }
-    
-    .home-content h1
-    {
-        font-size: 5.2rem;
-    }
-
-    .education
-    {
-        padding: 10rem 4% 5rem 5%;
-    }
-
-    .contact form .input-box .input-field
-    {
-        width: 100%;
-    }
-
-}
 
 @media (max-width:700px)
 {
@@ -1549,4 +1526,33 @@ section:nth-child(odd) .animate.scroll
         flex-direction: column;
         text-align: center;
     }
+}
+
+@media (max-width: 506px)
+{
+    .atom
+    {
+        position: absolute;
+    }
+    
+    .home-content h1
+    {
+        font-size: 5.2rem;
+    }
+
+    .home-content span
+    {
+        display: grid;
+    }
+
+    .education
+    {
+        padding: 10rem 4% 5rem 5%;
+    }
+
+    .contact form .input-box .input-field
+    {
+        width: 100%;
+    }
+
 }
