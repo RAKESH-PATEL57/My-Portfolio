@@ -11,6 +11,23 @@
     font-family: 'poppins', sans-serif;
 }
 
+/* :root
+{
+    /* --bg-color:linear-gradient(40deg,#ffe100,#001aff,#000000); 
+    --bg-color:#081b29;
+    --second-bg-color:#112e42;
+    --text-color:#ededed;
+    --main-color:#00abf0;
+
+    --color:#40ff9c;
+    --hover-color:linear-gradient(130deg,#ff0000,#1900ff8b,#00ff9d);
+    
+    --h3main-color:#00abf0;
+    --span-color:#00abf0;
+    --btn-color:#00abf0;
+    --borderbtn-color:#00abf0;
+}  */
+
 .dark-mode
 {
 
@@ -19,8 +36,9 @@
     --main-color:#f700ff;
 }
 
-:root  /* to do */
+:root 
 {
+    --main-color:#f700ff;
     --bg-color:#000000;
     --second-bg-color:#000000;
     --text-color:#ffffff;
@@ -48,73 +66,6 @@
         text-shadow: 0rem 0rem 10px #00ffff;
         color: #fff;
      }
-
-      /* Neon Progress Bar Start 
-
-        ::-webkit-scrollbar
-        {
-            width: 0;
-        }
-
-        #scrollPath
-        {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 2rem;
-            height: 100%;
-            background: rgba(255,255, 255,0.05);
-        }
-
-        #progressbar
-        {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: .8rem;
-            height: 100%;
-            border-bottom: .3rem solid #fff;
-            background: linear-gradient(to top, #008aff,#00ffe7);
-            animation: animate 5s linear infinite;       
-        }
-
-        @keyframes animate
-        {
-            0%,100%
-            {
-                filter: hue-rotate(0deg);
-            }
-            50%
-            {
-                filter: hue-rotate(360deg);
-            }
-        }
-
-        #progressbar::before
-        {
-            content:'';
-            position: absolute;
-            top: 0;1
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to top, #008aff,#00ffe7);
-            filter: blur(10px);
-        }
-
-        #progressbar::after
-        {
-            content:'';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(to top, #008aff,#00ffe7);
-            filter: blur(10px);
-        }
-
-         Neon Progress Bar End */
 
      #home
      {
@@ -159,6 +110,7 @@
      {
         background:var(--bg-color);
         color: #ea00ff;
+        transition: .6s ease-in-out;
      }
 
      .btn-box .btn:hover
@@ -759,6 +711,8 @@ span
     color: var(--span-color);
 }
 
+
+
 .about-img
 {
     position: relative;
@@ -768,9 +722,6 @@ span
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: url(/images/profile.jpg) no-repeat;
-    background-size: cover;
-    background-position: center; */
 }
 
 .about-img img
@@ -778,22 +729,44 @@ span
     width: 90%;
     border-radius: 50%;
     border: .2rem solid var(--main-color);
+    overflow: hidden;
 }
 
 .about-img .circle-spin
 {
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%,-50%) rotate(0);
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border-top: .2rem solid var(--second-bg-color);
+    /* border-top: .2rem solid var(--second-bg-color);
     border-bottom: .2rem solid var(--second-bg-color);
     border-left: .2rem solid var(--main-color);
-    border-right: .2rem solid var(--main-color);
-    animation: aboutSpinner 5s linear infinite;
+    border-right: .2rem solid var(--main-color); */
+    box-shadow: 0 0 10px #f4df00,
+                0 0 10px #f4df00,
+                0 0 20px #f4df00,
+                0 0 40px #f4df00,
+                0 0 60px #e100ff,
+                0 0 80px #00ff0a,
+                0 0 100px #00ff22;
+    /* animation: aboutSpinner 5s linear infinite; */
+    animation: profile 2s linear infinite;
+    transition: .5s;
+}
+
+@keyframes profile
+{
+    0%{
+        transform: scale(0.9);
+        transition: 9s;
+        transform-origin: 0deg;
+    }
+    80%,100%{
+        transform: scale(0.9);
+        transition: .3s;
+        transform-origin: 35deg;
+    }
 }
 
 @keyframes aboutSpinner
