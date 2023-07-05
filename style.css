@@ -743,12 +743,12 @@ span
     border-bottom: .2rem solid var(--second-bg-color);
     border-left: .2rem solid var(--main-color);
     border-right: .2rem solid var(--main-color); */
-    box-shadow: 0 0 10px #f4df00,
-                0 0 10px #f4df00,
-                0 0 20px #f4df00,
-                0 0 40px #f4df00,
-                0 0 60px #e100ff,
-                0 0 80px #00ff0a,
+    box-shadow: 0 0 10px orange,
+                0 0 10px orange,
+                0 0 20px orange,
+                0 0 40px orange,
+                0 0 60px orange,
+                0 0 80px orange,
                 0 0 100px #00ff22;
     /* animation: aboutSpinner 5s linear infinite; */
     animation: profile 2s linear infinite;
