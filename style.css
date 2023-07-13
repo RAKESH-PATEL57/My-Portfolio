@@ -11,6 +11,7 @@
     font-family: 'poppins', sans-serif;
 }
 
+
 /* :root
 {
     /* --bg-color:linear-gradient(40deg,#ffe100,#001aff,#000000); 
@@ -27,6 +28,7 @@
     --btn-color:#00abf0;
     --borderbtn-color:#00abf0;
 }  */
+
 
 .dark-mode
 {
@@ -252,6 +254,16 @@ html
 {
     font-size: 62.7%;
     overflow-x: hidden;
+}
+
+#particles-js
+{
+    position: absolute;
+    /* background: #00ff22; */
+    height: 100%;
+    width: 100%;
+    margin-left: -13.6rem;
+    opacity: .8;
 }
 
 body
@@ -557,14 +569,25 @@ section
 
 .atom
 {
-    /* display: flex; */
-    /* position: absolute; */
+    position: relative;
     height: 40rem;
     width: 40rem;
     margin-left: 18%;
     align-items: center;
     justify-content: center;
-    animation: earth 10s linear infinite;
+    /* animation: animateBg 3s linear infinite; */
+    animation: rotate 30s linear infinite;
+    transition: .5s linear;
+}
+
+.line span:nth-child(1)
+{
+    height: 1rem;
+    width: 4rem;
+    border: .5rem solid red;
+    border-radius: 50%;
+    animation: animateBg 3s linear infinite;
+    /* animation: animateBg2 3s linear infinite; */
 }
 
 @keyframes animateBg
@@ -578,7 +601,7 @@ section
     }
 }
 
-@keyframes earth
+@keyframes rotate
 {
     0%{
         transform:rotate(0deg);
@@ -591,18 +614,6 @@ section
 }
 
 
-/* .atom::before
-{
-    content: "";
-    position: relative;
-    width: 20rem;
-    height: 20px;
-    background: #fff;
-    box-shadow: inset 0 0 10px #0400ff;
-    border-radius: 50%;
-    animation: animateBg 3s linear infinite; 
-} */
-
 
 .line
 {
@@ -610,8 +621,8 @@ section
     height: 100%;
     position: absolute;
     opacity:100%;
-    box-shadow: 3rem 1rem 20rem var(--color);  
-    animation: animateBg 3s linear infinite;
+    box-shadow: 3rem 1rem 20rem var(--color);
+    animation: rotate 10s linear infinite;
 }
 
 /* .line:hover
@@ -629,7 +640,7 @@ section
     border-bottom: 10px solid var(--color);
     border-top: 10px solid var(--main-color);
     filter: drop-shadow(0 0 10px --color);
-    /* animation: earth 60s linear infinite; */
+    animation: earth 60s linear infinite;
     animation: line1 3s linear infinite;
 }
 
@@ -1429,7 +1440,7 @@ section:nth-child(odd) .animate.scroll
 
     .atom
     {
-        position: absolute;
+        /* position: absolute; */
         opacity: 1;
         margin-top: 30rem;
         margin-right: 12rem;
