@@ -259,11 +259,11 @@ html
 #particles-js
 {
     position: absolute;
-    /* background: #00ff22; */
+    /* background: #363837; */
     height: 100%;
     width: 100%;
     margin-left: -13.6rem;
-    opacity: .8;
+    opacity: .5;
 }
 
 body
@@ -576,7 +576,7 @@ section
     align-items: center;
     justify-content: center;
     /* animation: animateBg 3s linear infinite; */
-    animation: rotate 30s linear infinite;
+    animation: rotate 20s linear infinite;
     transition: .5s linear;
 }
 
