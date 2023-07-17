@@ -71,27 +71,28 @@
 
      #home
      {
-        border: .15rem solid rgb(0, 195, 255);
+        border-bottom: .15rem solid rgb(0, 195, 255);
      }    
 
      #about
      {
-        border: .15rem solid rgb(0, 195, 255);
+        border-bottom: .15rem solid rgb(0, 195, 255);
      }
 
      #education
      {
-        border: .15rem solid rgb(0, 195, 255);
+        border-bottom: .15rem solid rgb(0, 195, 255);
      }
 
      #skills
      {
-        border: .15rem solid rgb(0, 195, 255);
+        border-bottom: .15rem solid rgb(0, 195, 255);
+        height: 100vh;
      }
 
      #contact
      {
-        border: .15rem solid rgb(0, 195, 255);
+        border-bottom: .15rem solid rgb(0, 195, 255);
      }
 
      .home-content h1, span
