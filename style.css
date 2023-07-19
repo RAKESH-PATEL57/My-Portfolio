@@ -12,24 +12,6 @@
 }
 
 
-/* :root
-{
-    /* --bg-color:linear-gradient(40deg,#ffe100,#001aff,#000000); 
-    --bg-color:#081b29;
-    --second-bg-color:#112e42;
-    --text-color:#ededed;
-    --main-color:#00abf0;
-
-    --color:#40ff9c;
-    --hover-color:linear-gradient(130deg,#ff0000,#1900ff8b,#00ff9d);
-    
-    --h3main-color:#00abf0;
-    --span-color:#00abf0;
-    --btn-color:#00abf0;
-    --borderbtn-color:#00abf0;
-}  */
-
-
 .dark-mode
 {
 
@@ -44,16 +26,16 @@
     --bg-color:#000000;
     --second-bg-color:#000000;
 
-    --h3main-color:#00abf0;
+    --h3main-color:#00ffff;
     --text-color:#ffffff;
 
-    --icon-color:#00abf0;
+    --icon-color:#00ffff;
     --icon-hover-color:#f700ff;
-    --profile-pic-shadow-color:#00abf0;
+    --profile-pic-shadow-color:#00ffff;
 
     --projects-border-color:#ea00ff;
     --projects-before-color:#081b29;
-    --projects-hover-color:#00abf0;
+    --projects-hover-color:#00ffff;
     --projects-borderhover-color:#fff;
     
 
@@ -203,7 +185,7 @@ section
     color:#000000;
     -webkit-text-stroke: #fff;
     -webkit-text-stroke-width: 0.7px;
-    text-shadow: 0rem 0rem 1.4rem #00ffff;
+    text-shadow: 0rem 0rem 1.4rem var(--h3main-color);
 }
 
 
@@ -270,7 +252,7 @@ section
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: .1rem;
-    color: var(--bg-color);
+    color: var(--text-color);
     z-index: 1;
     overflow: hidden;
     transition: .5s;
@@ -337,6 +319,7 @@ section
     border-radius: 50%;
     font-size: 20px;
     color: var(--icon-color);
+    box-shadow: 0rem 0rem 1rem var(--h3main-color);  
     z-index: 1;
     overflow: hidden;
     transition: .5s;
@@ -520,6 +503,9 @@ section
 span
 {
     color: var(--span-color);
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 0.7px;
+    text-shadow: 0rem 0rem 1.4rem var(--h3main-color);  
 }
 
 
@@ -855,6 +841,7 @@ a
 }
 
 /*************  Ending Links to our projects   ***********/
+
 
 
 .contact
