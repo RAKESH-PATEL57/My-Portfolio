@@ -105,11 +105,9 @@
             </div>
             
             <div class="about3d_bg">
-                <model-viewer src="/images/scene.gltf" auto-rotate camera-controls disable-zoom autoplay>          
-                    <effect-composer render-mode="quality" msaa="8">
-                        <color-grade-effect contrast="5" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect>
-                      </effect-composer>
-                </model-viewer>
+
+                <model-viewer src="./models/robot_playground.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="./images/poster.webp" shadow-intensity="1" disable-zoom autoplay auto-rotate  field-of-view="30deg"></model-viewer>
+                 
             </div>
 
         </div>
