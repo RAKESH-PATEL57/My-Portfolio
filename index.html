@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
     <!-- box icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -71,12 +73,9 @@
      <!-- About section design -->
      <section class="about" id="about">
 
-        <div class="about_bg">
-            <img src="/gif/about-png.gif" alt="">
-        </div>
 
-        <!-- <div class="skill_bg">
-            <img src="/gif/butterfly.gif" alt="">
+        <!-- <div class="about_bg">
+            <img src="/gif/about-png.gif" alt="">
         </div> -->
 
 
@@ -104,6 +103,15 @@
                 <h2>Css</h2>
                 <h2>JavaScript</h2>
             </div>
+            
+            <div class="about3d_bg">
+                <model-viewer src="/images/scene.gltf" auto-rotate camera-controls disable-zoom autoplay>          
+                    <effect-composer render-mode="quality" msaa="8">
+                        <color-grade-effect contrast="5" saturation="-1" opacity="1" blend-mode="default"></color-grade-effect>
+                      </effect-composer>
+                </model-viewer>
+            </div>
+
         </div>
 
         <div class="Education">
@@ -203,6 +211,7 @@
   <!-- Contact section design -->
 
   <section class="contact" id="contact">
+
     <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1"></span></h2>
 
     <form action="#"> 
