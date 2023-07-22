@@ -496,7 +496,7 @@ span
     text-align: center;
 }
 
-.about_bg
+/* .about_bg
 {
     position: absolute;
     filter: blur(10px);
@@ -509,21 +509,8 @@ span
     height: 76rem;
     width: 160rem;
     opacity: .2;
-}
-
-.skill_bg
-{
-    position: absolute;
-    opacity: .8;
-    transform: rotate(-90deg);
-}
-
-.skill_bg img
-{
-    margin-right: 80rem;
-    height: 40rem;
-    width: 45rem;
-}
+    z-index: -1;
+} */
 
 .about-img
 {
@@ -604,9 +591,29 @@ span
 {
     position: relative;
     display: flex;
-    /* margin-top: .5rem; */
     padding: 1rem;
 }
+
+
+.Skills .about3d_bg
+{
+   position: absolute;
+   display: flex;
+   z-index: 1;
+}
+
+.about3d_bg
+{
+    display: flex;
+    margin-left:40rem ;
+}
+
+.about3d_bg model-viewer
+{
+    height: 33rem;
+    width: 34rem;
+}
+
 
 .about-content p
 {
@@ -614,6 +621,9 @@ span
     font-size: 1.9rem;
     margin: 2rem 0 3rem;
 }
+
+/*************   about-section end   **************/
+
 
 .btn-box.btns                
 {
