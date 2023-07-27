@@ -50,11 +50,11 @@ window.onscroll = () => {
 };
 
 // dark mode light
-let darkModeIcon = document.querySelector("#darkMode-icon");
-darkModeIcon.onclick = () => {
-  darkModeIcon.classList.toggle("bx-sun");
-  document.body.classList.toggle("dark-mode");
-};
+// let darkModeIcon = document.querySelector("#darkMode-icon");
+// darkModeIcon.onclick = () => {
+//   darkModeIcon.classList.toggle("bx-sun");
+//   document.body.classList.toggle("dark-mode");
+// };
 
 let neonModeIcon = document.querySelector("#Neon");
 neonModeIcon.onclick = () => {
@@ -84,11 +84,11 @@ function sendMail() {
   const templateID = "template_hon8jwj";
   
   emailjs.send(serviceId, templateID, params).then((res) => {
-  ducument.getElementById("name").value = "";
-  ducument.getElementById("email").value = "";
-  ducument.getElementById("mobile_number").value = "";
-  ducument.getElementById("email_subject").value = "";
-  ducument.getElementById("message").value = "";
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("mobile_number").value = "";
+  document.getElementById("email_subject").value = "";
+  document.getElementById("message").value = "";
   console.log(res);
   alert("Your message sent successefully");
 })
