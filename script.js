@@ -56,11 +56,11 @@ window.onscroll = () => {
 //   document.body.classList.toggle("dark-mode");
 // };
 
-let neonModeIcon = document.querySelector("#Neon");
-neonModeIcon.onclick = () => {
-  // neonModeIcon.classList.toggle('bx-shower');
-  document.body.classList.toggle("neon-mode");
-};
+// let neonModeIcon = document.querySelector("#Neon");
+// neonModeIcon.onclick = () => {
+//   // neonModeIcon.classList.toggle('bx-shower');
+//   document.body.classList.toggle("neon-mode");
+// };
 
 //NeonProgressBar
 // let progress = document.getElementById('progressbar');
