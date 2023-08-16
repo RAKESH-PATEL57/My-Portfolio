@@ -46,11 +46,22 @@
     --btn-color:#081b29;
     --borderbtn-color:#fff;
 
+    --scrolbar-bg-color:#000000;
+
 
 }
 
 /**********  start scroolbaar designing  ***********/
-
+::-webkit-scrollbar
+{
+    background: var(--scrolbar-bg-color);
+    width: 1rem;
+}
+::-webkit-scrollbar-thumb
+{
+    background: var(--h3main-color);
+    border-radius: 1rem;
+}
 
 /**********  end scroolbaar designing  ***********/
 
