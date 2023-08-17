@@ -56,20 +56,6 @@ window.onscroll = () => {
 //   document.body.classList.toggle("dark-mode");
 // };
 
-// let neonModeIcon = document.querySelector("#Neon");
-// neonModeIcon.onclick = () => {
-//   // neonModeIcon.classList.toggle('bx-shower');
-//   document.body.classList.toggle("neon-mode");
-// };
-
-//NeonProgressBar
-// let progress = document.getElementById('progressbar');
-//         let totalHeight = document.body.scrollHeight - window.innerHeight;
-//         window.onscroll = function(){
-//             let progressHeight = (window.pageYOffset / totalHeight) * 100;
-
-//           progress.style.height = progressHeight + "%";
-//         }
 
 function sendMail() {
   var params = {
@@ -92,6 +78,18 @@ function sendMail() {
   console.log(res);
   alert("Your message sent successefully");
 })
+
 .catch(err => console.log(err));
 
 }
+
+
+//************   scrolling animation section ****************************
+ScrollReveal({
+  reset:true,
+  distance: '60px',
+  duration:2500,
+  delay: 100
+});
+
+ScrollReveal().reveal('.home-content', {delay: 200, origin:'left'});
