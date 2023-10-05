@@ -1025,6 +1025,33 @@ a
 
 }
 
+
+@media (max-width: 991px)
+{
+    .header
+    {
+        padding: 2rem 4%;
+    }
+
+    section
+    {
+        padding: 10rem 4% 2rem;
+    }
+
+    .home
+    {
+        padding: 0 4%;
+    }
+
+    .atom
+    {  
+       height: 30rem;
+       width: 40rem; 
+       margin-right: 8rem;
+    }
+
+}
+
 @media (max-width:895px)
 {
     .about3d_bg
@@ -1058,163 +1085,6 @@ a
 
 }
 
-
-@media (max-width:680px)
-{
-    
-    .about_bg img
-   {
-    margin-left: -100rem;
-   }
-
-   .about-img
-   {
-    margin-left: 24rem;
-   }
-
-   .about-content
-   {
-    text-align: center;
-   }
-
-   .Skills
-   {
-    margin-top: 0rem;
-    margin-left: 0rem;
-   }
-   
-   .Skills h1
-   {
-    display: flex;
-    justify-content: center;
-   }  
-
-   .about3d_bg
-   {
-    margin-left:35rem ;
-   }
-   
-   .about3d_bg model-viewer
-   {
-     display: block;
-   }
-
-}
-
-@media (max-width:570px)
-{
-    .about-img
-    {
-     margin-left: 18rem;
-    }
-
-    .about3d_bg
-    {
-     margin-left:30rem ;
-    }
-
-}
-
-@media (max-width:540px)
-{
-    .about-img
-    {
-     margin-left: 18rem;
-    }
-
-    .about3d_bg
-    {
-     margin-left:28rem ;
-    }
-
-}
-
-@media (max-width:490px)
-{
-    .about-img
-    {
-     margin-left: 14rem;
-    }
-
-    .about_bg img
-    {
-        height: 10rem;
-        width: 120rem;
-        margin-right: -10rem;
-    }
-
-    .education-bg img
-    {
-        height: 40rem;
-    }
-
-    .about3d_bg
-    {
-     margin-left:20rem ;
-    }
-
-}
-
-@media (max-width:410px)
-{
-    .about-img
-    {
-     margin-left: 8rem;
-    }
-
-    .about_bg img
-    {
-     margin-left: -100rem;
-     width: 120rem;
-     height: 100rem;
-    }
-
-    .about3d_bg
-    {
-     margin-left:12rem ;
-    }
-
-}
-
-@media (max-width:340px)
-{
-    .about-img
-    {
-     margin-left: 6.5rem;
-    }
-
-    .about3d_bg
-    {
-     margin-left:8rem ;
-    }
-
-}
-
-@media (max-width: 991px)
-{
-    .header
-    {
-        padding: 2rem 4%;
-    }
-
-    section
-    {
-        padding: 10rem 4% 2rem;
-    }
-
-    .home
-    {
-        padding: 0 4%;
-    }
-
-    .atom
-    {  
-       height: 30rem;
-       width: 40rem; 
-       margin-right: 8rem;
-    }
-
-}
 
 @media (max-width: 768px)
 {
@@ -1292,15 +1162,6 @@ a
 
 }
 
-@media (max-width: 700px)
-{
-    .atom
-    {
-        opacity: 0;
-        position: absolute;
-    }
-}
-
 @media (max-width:700px)
 {
     html
@@ -1321,7 +1182,7 @@ a
 
     .atom
     {
-        /* position: absolute; */
+        position: absolute;
         opacity: 1;
         margin-top: 30rem;
         margin-right: 12rem;
@@ -1337,6 +1198,78 @@ a
         text-align: center;
     }
 }
+
+
+@media (max-width:680px)
+{
+    
+    .about_bg img
+   {
+    margin-left: -100rem;
+   }
+
+   .about-img
+   {
+    margin-left: 24rem;
+   }
+
+   .about-content
+   {
+    text-align: center;
+   }
+
+   .Skills
+   {
+    margin-top: 0rem;
+    margin-left: 0rem;
+   }
+   
+   .Skills h1
+   {
+    display: flex;
+    justify-content: center;
+   }  
+
+   .about3d_bg
+   {
+    margin-left:35rem ;
+   }
+   
+   .about3d_bg model-viewer
+   {
+     display: block;
+   }
+
+}
+
+@media (max-width:570px)
+{
+    .about-img
+    {
+     margin-left: 18rem;
+    }
+
+    .about3d_bg
+    {
+     margin-left:30rem ;
+    }
+
+}
+
+@media (max-width:540px)
+{
+    .about-img
+    {
+     margin-left: 18rem;
+    }
+
+    .about3d_bg
+    {
+     margin-left:28rem ;
+    }
+
+}
+
 
 @media (max-width: 515px)
 {
@@ -1404,3 +1337,66 @@ a
     }
 
 }
+
+
+@media (max-width:490px)
+{
+    .about-img
+    {
+     margin-left: 14rem;
+    }
+
+    .about_bg img
+    {
+        height: 10rem;
+        width: 120rem;
+        margin-right: -10rem;
+    }
+
+    .education-bg img
+    {
+        height: 40rem;
+    }
+
+    .about3d_bg
+    {
+     margin-left:20rem ;
+    }
+
+}
+
+@media (max-width:410px)
+{
+    .about-img
+    {
+     margin-left: 8rem;
+    }
+
+    .about_bg img
+    {
+     margin-left: -100rem;
+     width: 120rem;
+     height: 100rem;
+    }
+
+    .about3d_bg
+    {
+     margin-left:12rem ;
+    }
+
+}
+
+@media (max-width:340px)
+{
+    .about-img
+    {
+     margin-left: 6.5rem;
+    }
+
+    .about3d_bg
+    {
+     margin-left:8rem ;
+    }
+
+}
+
