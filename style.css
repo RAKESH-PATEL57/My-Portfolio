@@ -800,11 +800,14 @@ span
 .education-content .content .year i
 {
     padding: .5rem;
+
 }
 
 .education-content .content h3
 {
     font-size: 2rem;
+    -webkit-text-stroke-width: 0;
+    color: var(--h3main-color);
 }
 
 .education-content .content p
