@@ -191,16 +191,22 @@ section
 
 .home-content
 {
-    max-width: 60rem;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events:none;
+    width: 100%;
 }
 
-
-.home-content i
+.home-content .intro-content
 {
-    margin-right: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.home-content h1
+.home-content .intro-content h1, h3
 {
     position: relative;
     display: inline-block;
@@ -216,36 +222,16 @@ section
     /* border: 2px solid red; */
 }
 
-.home-content .text-animate
+.home-content .intro-content h3
 {
-    position: relative;
-    width: 32.8rem;
-    /* animation: animateBg 60s linear infinite; */
-}
-
-.home-content .text-animate h3
-{
-  font-size: 3.2rem;
-  font-weight: 800;
-  color:black;
-  -webkit-text-stroke: .8px white; 
-  text-shadow: 0rem 0rem 10px #00ffff;
-}
-
-#home-profile-pic
-{
-    height: 40rem;
-    width: 40rem;
-    margin-left: 29rem;
-    margin-bottom: 4.5rem;
+    font-size: 3rem;
 }
 
 .home-profile-img
 {
     position: relative;
-    margin-top: 10rem;
-    width: 25rem;
-    height: 25rem;
+    width: 35rem;
+    height: 35rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -293,11 +279,11 @@ section
 
 
 
-.home-content p
+.home-content .intro-content p
 {
     position: relative;
     font-size: 1.6rem;
-    margin: 2rem 0 4rem;
+    margin-top: 1rem;
 }
 
 .btn-box
@@ -935,16 +921,7 @@ a
 
 @media(max-width:1426px)
 {
-    .home-profile-img
-    {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
+ 
     .home-profile-img .circle-spin
     {
         height: 95.7%;   
