@@ -952,6 +952,12 @@ a
     width: 30rem;
    }
 
+   .home-profile-img
+   {
+    height: 30rem;
+    width: 30rem;
+   }
+
 }
 
 @media (max-width:1067px)
