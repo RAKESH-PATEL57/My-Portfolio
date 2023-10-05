@@ -919,15 +919,6 @@ a
 
 /* making responsive for about section  */
 
-@media(max-width:1426px)
-{
- 
-    .home-profile-img .circle-spin
-    {
-        height: 95.7%;   
-    }
- 
-}
 
 @media (max-width:1380px)
 {
@@ -941,39 +932,6 @@ a
     margin-left:30rem ;
    }
 
-   .home-profile-img
-    {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .home-profile-img .circle-spin
-    {
-        height: 92.7%;   
-    }
-
-}
-
-@media (max-width:1340px)
-{
-    .home-profile-img .circle-spin
-    {
-        height: 90.7%;   
-    }
-}
-
-@media (max-width:1316px)
-{
-    .home-profile-img
-    {
-        width: 1.8rem;
-        height: 1.8rem;
-    }
-
-    .home-profile-img .circle-spin
-    {
-        height: 85.7%;   
-    }
 }
 
 @media (max-width:1275px)
@@ -996,85 +954,6 @@ a
 
 }
 
-@media (max-width:1265px)
-{
-    .home-profile-img .circle-spin
-    {
-        height: 83.7%;   
-    }
-}
-
-@media (max-width:1245px)
-{
-    .home-profile-img .circle-spin
-    {
-        height: 82.7%;   
-    }
-}
-
-@media (max-width:1235px)
-{
-    .home-profile-img .circle-spin
-    {
-        height: 80.7%;   
-    }
-}
-
-@media (max-width:1211px)
-{
-
-    .home-profile-img
-    {
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-
-    .home-profile-img .circle-spin
-    {
-        height: 78.7%;   
-    }
-}
-
-@media (max-width:1197px)
-{
-
-    .home-profile-img
-    {
-        width: 1.3rem;
-        height: 1.3rem;
-    }
-
-    .home-profile-img .circle-spin
-    {
-        height: 85.7%;   
-    }
-}
-
-@media (max-width:1165px)
-{
-    .home-profile-img .circle-spin
-    {
-        height: 80.7%;   
-    }
-
-    .home-profile-img
-    {
-        margin-top: -0.5rem;
-    }
-}
-
-@media (max-width:1100px)
-{
-    .home-profile-img .circle-spin
-    {
-        height: 76.7%;   
-    }
-    .home-profile-img
-    {
-        margin-top: -1rem;
-    }
-}
-
 @media (max-width:1067px)
 {
     .about_bg img
@@ -1082,51 +961,6 @@ a
     margin-left: -70rem;
    }
 
-   .home-profile-img .circle-spin
-   {
-       height: 70.7%;   
-   }
-
-}
-
-@media (max-width:1010px)
-{
-    .home-profile-img .circle-spin
-    {
-        height: 65.7%;   
-    }
-}
-
-
-@media (max-width:990px)
-{
-    .home-profile-img .circle-spin
-    {
-        height: 76.7%;   
-    }
-}
-
-@media (max-width:980px)
-{
-
-    .home-profile-img
-    {
-        width: 1.3rem;
-        height: 1.3rem;
-    }
-
-    .home-profile-img .circle-spin
-    {
-        height: 75.7%;   
-    }
-}
-
-@media (max-width:935px)
-{
-    .home-profile-img .circle-spin
-    {
-        height: 70.7%;   
-    }
 }
 
 @media (max-width:895px)
@@ -1136,19 +970,6 @@ a
     margin-left:15rem ;
    }
 
-   .home-profile-img .circle-spin
-   {
-       height: 68.7%;   
-   }
-
-}
-
-@media(max-width:875px)
-{
-    .home-profile-img .circle-spin
-    {
-        height: 65.7%;   
-    }
 }
 
 @media (max-width:855px)
@@ -1163,11 +984,6 @@ a
     {
         font-size: 5rem;
     }
-
-    .home-profile-img .circle-spin
-    {
-        height: 64.7%;   
-    }
  
 }
 
@@ -1176,19 +992,6 @@ a
     .about3d_bg model-viewer
    {
      display: none;
-   }
-
-   .home-profile-img
-   {
-       width: 1rem;
-       height: 1.5rem;
-       margin-right: 3rem;
-   }
-
-   .home-profile-img .circle-spin
-   {
-       height: 62.7%;  
-       width: 100%; 
    }
 
 }
@@ -1324,13 +1127,6 @@ a
     }
 
 }
-
-
-
-
-
-
-
 
 @media (max-width: 1500px)
 {
