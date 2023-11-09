@@ -1197,7 +1197,8 @@ a
         align-items: center;
         flex-direction: column;
         text-align: center;
-        height: 55vh;
+        /* height: 55vh; */
+        gap: 2rem;
     }
     
     .home-profile-img
@@ -1293,36 +1294,16 @@ a
         justify-content: center;
     }
 
-    .home-content
+    .home-profile-img
     {
-        margin-bottom: 35rem;
+        height: 27rem;
+        width: 27rem;
     }
 
-    .atom
-    {
-        position: absolute;
-        opacity: 1;
-        margin-top: 35rem;
-        margin-right: 6.5rem;
-        height: 20rem;
-        width: 20rem;
-    }
-
-    .home-content               
-    {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
 }
 
 @media (max-width: 506px)
 {
-    .atom
-    {
-        position: absolute;
-    }
     
     .home-content h1
     {
