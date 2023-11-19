@@ -1,3 +1,4 @@
+
 //toggle icon navbar
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
@@ -84,12 +85,67 @@ function sendMail() {
 }
 
 
-//************   scrolling animation section ****************************
-ScrollReveal({
-  reset:true,
-  distance: '60px',
-  duration:2500,
-  delay: 100
-});
 
-ScrollReveal().reveal('.home-content', {delay: 200, origin:'left'});
+
+
+
+// Adding Gsap Animations   
+
+// var tl = gsap.timeline();
+
+// tl.from("header a",{
+//   y:-200,
+//   opacity:0,
+//   duration:0.8,
+// }, home)
+
+// tl.from("#nav",{
+//   y:-200,
+//   opacity:0,
+//   duration:1,
+// }, home)
+
+// tl.from("#left-intro",{
+//   x:-700,
+//   duration:2,
+//   opacity:0
+// }, home)
+
+
+// tl.from("#home-profile-pic .arrow-one",{
+//   rotate:-90,
+//   duration:2,
+//   opacity:0,
+//   // scale:0
+// }, home)
+
+// tl.from("#home-profile-pic img",{
+//   duration:2,
+//   opacity:0,
+//   scale:0.5
+// }, home)
+
+
+// tl.from(".home-sci",{
+//   duration:1,
+//   opacity:0,
+//   scale:0.5,
+//   stagger:0.1
+// })
+
+
+// tl.from(".home-sci *",{
+//   y:-100,
+//   duration:1,
+//   delay:0.5,
+//   opacity:0,
+//   stagger:0.2
+// })
+// tl.from("#education ",{
+//   y:-100,
+//   duration:1,
+//   delay:0.5,
+//   opacity:0,
+//   stagger:0.2,
+//   scrollTrigger:true
+// })
