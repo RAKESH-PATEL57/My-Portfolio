@@ -42,7 +42,7 @@
         <a href="#" class="logo" id="Neon">R.K.</a>
         <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2"></span></div>
 
-        <nav class="navbar">
+        <div class="navbar" id="nav">
             <!-- <div class="bx bx-moon" id="darkMode-icon"></div> -->
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -50,21 +50,30 @@
             <a href="#contact">Contact</a>
             <span class="active-nav"></span>
             <span class="animate" style="--i:2"></span>
-        </nav>
+        </div>
     </header>
     
+    <!-- Gsap animation -->
+    <!-- <div class="gsap-btf">
+        <img src="./gif/butterfly.gif" alt="butterfly">
+    </div> -->
 
      <!-- Home section design  -->
 
    <section class="home show-animate" id="home">               <!-- shortcut (section.home#home) -->
-
+      
        <div id="particles-js"></div>
     
         <div class="home-content">
             <div class="intro-content">
-                <h1>Hi, I'm <span>Rakesh Patel</span></h1>        
-                <h3>Web Developer</h3>
-                <p class="location"><i class="bi bi-geo-alt-fill"></i> Sambalpuri, Western-Odisha </p>     
+                <div class="intro-gif">
+                    <img src="./images/intro.gif" alt="">
+                </div>
+                <div class="intro-text">
+                    <h1>Hi, I'm <span>Rakesh Patel</span></h1>        
+                    <h3>Web Developer</h3>
+                    <p class="location"><i class="bi bi-geo-alt-fill"></i> Sambalpuri, Western-Odisha </p>     
+                </div>
             </div>
             <div class="home-profile-img" id="home-profile-pic">
                 <span class="arrow-one"></span>
@@ -1968,18 +1977,12 @@ particlesJS('particles-js',
 
 
 
-
-
-
-
-
-
-
   </script>
 
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script.js"></script>
 </body>
 </html>
