@@ -679,14 +679,23 @@ span
 .education-row .education-column          
 {
     flex: 1 1 40rem;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    width: 92vw;
 } 
 
-.education-column .title
+.education-column
 {
     position: relative;
     display: inline-block;
     font-size: 2.5rem;
     margin: 0 0 1.5rem 2rem;
+}
+
+.education-column .education-box
+{
+    flex-basis: 45%;
 }
 
 .education-box .education-content
@@ -756,7 +765,24 @@ span
     padding-top: .5rem;
 }
 
-/*************   Starting Links to our projects   ***********/
+/* edu-right part */
+.education-column .edu-right
+{
+    /* border: 2px solid red; */
+    flex-basis: 40%;
+
+}
+
+.edu-right img
+{
+    height: 45rem;
+    width: 55rem;
+    filter: drop-shadow(0rem 5rem 10px rgb(4, 198, 220)) invert(100%) hue-rotate(180deg);
+}
+
+/*************   Starting projects section ***********/
+
+
 a
 {
     color: var(--color);
