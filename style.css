@@ -1373,6 +1373,17 @@ a
      margin-left:20rem ;
     }
 
+    .education-column .education-box
+    {
+        width: 45rem;
+    }
+
+    .education-column .edu-right
+    {
+        width: 44rem;
+        height: rem;
+    }
+
 }
 
 @media (max-width:410px)
