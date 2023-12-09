@@ -56,33 +56,55 @@ window.onscroll = () => {
 //   darkModeIcon.classList.toggle("bx-sun");
 //   document.body.classList.toggle("dark-mode");
 // };
+let subBtn = document.getElementById("subbtn");
+
+subBtn.onclick = () =>
+{
+
+  let userMsg = document.getElementById("message").value;
+  let userName = document.getElementById("name").value;
+  let userEmail = document.getElementById("email").value;
+  let userMobNumber = document.getElementById("mobile_number").value;
+  let userESub = document.getElementById("email_subject").value;
 
 
-function sendMail() {
-  var params = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    mobile_number: document.getElementById("mobile_number").value,
-    email_subject: document.getElementById("email_subject").value,
-    message: document.getElementById("message").value,
-  };
+  if(userMsg == '' )
+  {
+    alert("Please fill the all required fill the aal details 😊");
+  }
   
-  const serviceId = "service_n6ww68e";
-  const templateID = "template_hon8jwj";
+  else
+  {
   
-  emailjs.send(serviceId, templateID, params).then((res) => {
-  document.getElementById("name").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("mobile_number").value = "";
-  document.getElementById("email_subject").value = "";
-  document.getElementById("message").value = "";
-  console.log(res);
-  alert("Your message sent successefully");
-})
+    var params = {
+      name: userName,
+      email: userEmail,
+      mobile_number: userMobNumber,
+      email_subject: userESub,
+      message: userMsg,
+    };
+    
+    const serviceId = "service_n6ww68e";
+    const templateID = "template_hon8jwj";
+    
+    emailjs.send(serviceId, templateID, params).then((res) => {
+    userName = "";
+    userEmail = "";
+    userMobNumber = "";
+    userESub = "";
+    userMsg = "";
+    // console.log(res);
+    alert("Your message sent successefully");
+  })
+  
+  .catch(err => console.log(err));
+  
+  }
 
-.catch(err => console.log(err));
 
 }
+
+
 
 
 
