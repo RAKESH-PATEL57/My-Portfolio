@@ -514,6 +514,7 @@ span
     background: var(--second-bg-color);
     padding-bottom: 6rem;
     border-bottom: .15rem solid rgb(0, 195, 255);
+    position: relative;
 }
 
 .heading
@@ -852,7 +853,7 @@ a
     resize: none;
 }
 
-.contact form .btn-box.btns .btn
+.contact form .btn-box.btns #subbtn
 {
     cursor: pointer;
 }
