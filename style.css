@@ -695,7 +695,7 @@ span
 
 .education-column .education-box
 {
-    flex-basis: 45%;
+    width: 60rem;
 }
 
 .education-box .education-content
@@ -769,14 +769,15 @@ span
 .education-column .edu-right
 {
     /* border: 2px solid red; */
-    flex-basis: 40%;
-
+    width: 55rem;
+    height: 43rem;
 }
 
 .edu-right img
 {
-    height: 45rem;
-    width: 55rem;
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
     filter: drop-shadow(0rem 5rem 10px rgb(4, 198, 220)) invert(100%) hue-rotate(180deg);
 }
 
@@ -1183,19 +1184,13 @@ a
         transition-delay: .25s;
     }
 
-    /* .atom
-    {
-        height: 20rem;
-        width: 30rem;
-    } */
-
 }
 
 @media (max-width:700px)
 {
     html
     {
-      font-size: 53%;  
+      font-size: 55%;  
     }
 
     .home
@@ -1204,21 +1199,8 @@ a
         justify-content: center;
     }
 
-    /* .atom
-    {
-        position: absolute;
-        opacity: 1;
-        margin-top: 30rem;
-        margin-right: 12rem;
-        height: 30rem;
-        width: 30rem;
-    } */
-
     .home-content           
     {
-        /* margin-bottom: 35rem; */
-        /* border: 2px solid red; */
-        /* margin: 10rem; */
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -1231,6 +1213,14 @@ a
     {
         height: 25rem;
         width: 25rem;
+    }
+
+
+
+    .education-column
+    {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
