@@ -70,7 +70,7 @@ subBtn.onclick = () =>
 
   if(userMsg == '' )
   {
-    alert("Please fill the all required fill the aal details 😊");
+    alert("Please enter all the required details 😊");
   }
   
   else
