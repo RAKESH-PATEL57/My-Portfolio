@@ -177,18 +177,25 @@ subBtn.onclick = () =>
 function loading()
 {
   document.querySelector('.loading-page').classList.add('loding-off');
+  document.body.classList.add('loding-of');
   // window.scroll = 'no-scroll';
-  // document.querySelector('#home').style.display = 'none';
-  // document.querySelector('#about').style.display = 'none';
-  // document.querySelector('#education').style.display = 'none';
-  // document.querySelector('#contact').style.display = 'none';
+  // document.querySelector('#home').style.display = 'block';
+  // document.querySelector('#about').style.display = 'block';
+  // document.querySelector('#education').style.display = 'block';
+  // document.querySelector('#contact').style.display = 'block';
 }
 
 function fadeOut()
 {
-  setInterval(loading, 3000);
+  setInterval(loading, 2000);
 }
 
+
 window.onload = fadeOut;
+
+// document.querySelector('#home').style.display = 'none';
+// document.querySelector('#about').style.display = 'none';
+// document.querySelector('#education').style.display = 'none';
+// document.querySelector('#contact').style.display = 'none';
 
 
