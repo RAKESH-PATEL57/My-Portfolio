@@ -75,7 +75,6 @@ html
     overflow-x: hidden;
     scrollbar-color: red;
     scroll-behavior: smooth;
-
 }
 
 #particles-js
@@ -331,37 +330,6 @@ section
     filter: contrast(120%);
     
 }
-
-/* .home-profile-img .circle-spin
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-   
-    transform: scale(0.9);         
-    animation: profile 2.5s linear infinite;
-    
-} */
-
-@keyframes profile
-{
-    0%,100%
-    {
-        box-shadow: 0 0 10px var(--profile-pic-shadow-color);
-    }
-    50%
-    {
-        box-shadow: 0 0 10px var(--profile-pic-shadow-color),
-        0 0 10px var(--profile-pic-shadow-color),
-        0 0 20px var(--profile-pic-shadow-color),
-        0 0 40px var(--profile-pic-shadow-color),
-        0 0 60px var(--profile-pic-shadow-color),
-        0 0 80px var(--profile-pic-shadow-color);
-    }
-}
-
-
 
 .home-content .intro-content p
 {
@@ -894,7 +862,7 @@ a
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: #000000;
     display: flex;
@@ -902,7 +870,6 @@ a
     justify-content: center;
     overflow: hidden;
     z-index: 1000;
-    overflow-y: hidden;
     /* border: 2px solid red; */
     transition: .5s;
 }
@@ -934,41 +901,27 @@ a
 
 .loading-page.loding-off
 {
-    top: 110%;
+    bottom: 100%;
     opacity: 0;
+    /* overflow-y: hidden; */
 }
 
-/* .loading-page span::after
+.main
 {
-    position: absolute;
-    content: 'rakesh';
-    width: 100%;
-} */
-
-
-.loader-container img
-{
-    width: 10rem;
-    transform: rotate(20deg);
-    animation: butterFly 5s linear forwards;
-}
-
-@keyframes butterFly 
-{
-   0%{
-    margin-left: -20rem;
-    }    
-   100%{
-    margin-left: 30rem;
-    }    
-}
-
-.loader-container.fade-out
-{
-    top: 110%;
     opacity: 0;
-    /* opacity: 1; */
+    display: none;
+    transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.loding-of
+{
+    .main
+    {
+        opacity: 1;
+        display: block;
+    }
+}
+
 
 
 
@@ -1030,6 +983,7 @@ a
    .about3d_bg model-viewer
    {
     height: 30rem;
+
     width: 30rem;
    }
 
@@ -1392,6 +1346,7 @@ a
     .about-img
     {
      margin-left: 14rem;
+     /* border: 2px solid red; */
     }
 
     .about_bg img
@@ -1399,6 +1354,13 @@ a
         height: 10rem;
         width: 120rem;
         margin-right: -10rem;
+        /* border: 2px solid red; */
+    }
+
+    .about3d_bg model-viewer
+    {
+        margin-left: -13rem;
+        /* border: 2px solid red; */
     }
 
     .education-bg img
@@ -1414,7 +1376,7 @@ a
 
     .education-column .edu-right
     {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         width: 100%;
         height: 40rem;
     }
