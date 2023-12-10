@@ -32,7 +32,7 @@ window.onscroll = () => {
       sec.classList.add("show-animate");
     }
 
-    //animation that repeats on scroll
+     //animation that repeats on scroll
     else {
       sec.classList.remove("show-animate");
     }
@@ -67,10 +67,9 @@ subBtn.onclick = () =>
   let userMobNumber = document.getElementById("mobile_number").value;
   let userESub = document.getElementById("email_subject").value;
 
-
   if(userMsg == '' )
   {
-    alert("Please enter all the required details 😊");
+    alert("Please enter all the required details😊");
   }
   
   else
@@ -171,3 +170,25 @@ subBtn.onclick = () =>
 //   stagger:0.2,
 //   scrollTrigger:true
 // })
+
+
+
+//********************* loading section   ******************************
+function loading()
+{
+  document.querySelector('.loading-page').classList.add('loding-off');
+  // window.scroll = 'no-scroll';
+  // document.querySelector('#home').style.display = 'none';
+  // document.querySelector('#about').style.display = 'none';
+  // document.querySelector('#education').style.display = 'none';
+  // document.querySelector('#contact').style.display = 'none';
+}
+
+function fadeOut()
+{
+  setInterval(loading, 3000);
+}
+
+window.onload = fadeOut;
+
+
