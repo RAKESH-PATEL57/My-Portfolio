@@ -889,24 +889,61 @@ a
 
 /************   loader section    ************/
 
-.loader-container
+.loading-page
 {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100%;
-    z-index: 10000;
     background: #000000;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    /* z-index: 1000; */
+    z-index: 1000;
     overflow-y: hidden;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     transition: .5s;
 }
+
+.loading-page span
+{
+    font-size: 4.3rem;
+    -webkit-text-stroke: 0;
+    color: #fff;
+    animation: loading 2s linear infinite;
+    opacity: 0;
+    animation-delay: calc(0.3s * var(--i));
+}
+
+@keyframes loading 
+{
+   0%{
+    opacity: 1;
+   } 
+   50%
+   {
+    opacity: .5;
+   }
+   100%
+   {
+    opacity: 0;
+   }
+}
+
+.loading-page.loding-off
+{
+    top: 110%;
+    opacity: 0;
+}
+
+/* .loading-page span::after
+{
+    position: absolute;
+    content: 'rakesh';
+    width: 100%;
+} */
 
 
 .loader-container img
@@ -1221,6 +1258,7 @@ a
     {
         flex-direction: column;
         align-items: center;
+        margin-left: 0;
     }
 }
 
@@ -1368,21 +1406,19 @@ a
         height: 40rem;
     }
 
-    .about3d_bg
-    {
-     margin-left:20rem ;
-    }
-
     .education-column .education-box
     {
-        width: 45rem;
+        width: 100%;
+        /* border: 2px solid red; */
     }
 
     .education-column .edu-right
     {
-        width: 44rem;
-        height: rem;
+        border: 2px solid red;
+        width: 100%;
+        height: 40rem;
     }
+
 
 }
 
@@ -1407,7 +1443,7 @@ a
 
 }
 
-@media (max-width:340px)
+@media (max-width:348px)
 {
     .about-img
     {
