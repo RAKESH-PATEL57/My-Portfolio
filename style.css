@@ -869,7 +869,7 @@ a
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    z-index: 1000;
+    /* z-index: 1000; */
     /* border: 2px solid red; */
     transition: .5s;
 }
