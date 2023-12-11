@@ -86,6 +86,7 @@ html
     margin-left: -13.6rem;
     opacity: .5;
     filter: hue-rotate(360deg);
+    z-index: 1;
 }
 
 body
@@ -275,34 +276,8 @@ section
     overflow: hidden;
     transform: rotate(20deg);
     transition: .5s;
+    z-index: 100;
 }
-
-/* .home-profile-img::before
-{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transform: scale(1);  
-    overflow: hidden;       
-    /* animation: profile 2.5s linear infinite; 
-    /* border: 2px solid red; 
-}
-.home-profile-img::after
-{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transform: scale(.57);  
-    overflow: hidden;       
-    /* animation: profile 2.5s linear infinite; 
-    /* border: 2px solid red; 
-    /* overflow: hidden; 
-    filter: blur(10px);
-} */
 
 .arrow-one
 {
@@ -314,7 +289,7 @@ section
     /* box-shadow: 0px 0px 10px aqua; */
     transform: rotate(20deg);
     z-index: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: .5s;
 }
 
@@ -627,14 +602,9 @@ span
     min-height: auto;
     padding-bottom: 5rem;
     border-bottom: .15rem solid rgb(0, 195, 255);
+    
 }
 
-.education-bg
-{
-    position: absolute;
-    opacity: .5;
-    animation: butterfly .10s linear infinite;
-}
 
 
 .education .education-row
@@ -642,6 +612,7 @@ span
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
+    z-index: 100;
 }
 
 .education-row .education-column          
@@ -787,6 +758,7 @@ a
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 100;
 }
 
 .contact form .input-box .input-field
@@ -807,6 +779,7 @@ a
     background: transparent;
     border-radius: .6rem;
     border: .2rem solid var(--main-color);
+    z-index: 100;
 }
 
 .contact form .input-box .input-field input::placeholder
@@ -868,9 +841,6 @@ a
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    /* z-index: 1000; */
-    /* border: 2px solid red; */
     transition: .5s;
 }
 
@@ -910,7 +880,8 @@ a
 {
     opacity: 0;
     display: none;
-    transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0;
+    transition: .3s;
 }
 
 .loding-of
@@ -919,6 +890,7 @@ a
     {
         opacity: 1;
         display: block;
+        z-index: 1000;
     }
 }
 
@@ -1125,7 +1097,8 @@ a
         left: -100%;
         width: 100%;
         padding: 1rem 4%;
-        background: var(--main-color);
+        /* background: var(--main-color); */
+        background: linear-gradient(80deg, aqua,transparent,aqua,transparent);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         z-index: 8;                                 
         transition: .25s ease;
