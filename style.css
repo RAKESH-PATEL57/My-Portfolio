@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap'); */
 
 
 *{
@@ -55,16 +55,6 @@
 
 
 /**********  start scroolbaar designing  ***********/
-::-webkit-scrollbar
-{
-    background: var(--scrolbar-bg-color);
-    width: 1rem;
-}
-::-webkit-scrollbar-thumb
-{
-    background: var(--h3main-color);
-    border-radius: 1rem;
-}
 
 /**********  end scroolbaar designing  ***********/
 
@@ -106,7 +96,7 @@ body
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 500;
     transition: .3s;
 }
 
@@ -452,7 +442,8 @@ span
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     gap: 2rem;
     background: var(--second-bg-color);
     padding-bottom: 6rem;
@@ -464,14 +455,21 @@ span
 {
     position: relative;
     font-size: 5rem;
-    margin-top: -6rem;
     text-align: center;
 }
 
-.about-img
+.about .about-items
+{
+    width: 92vw;
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-left .about-img
 {
     position: relative;
-    margin-top: 10rem;
     width: 25rem;
     height: 25rem;
     border-radius: 50%;
@@ -508,12 +506,7 @@ span
 }
 
 
-.about-content
-{
-    text-align: left;
-}
-
-.about-content h3
+.about-left .about-content h3
 {
     position: relative;
     display: inline-block;
@@ -523,12 +516,15 @@ span
 .Skills
 {
     display: flex;
-    margin-top: -50rem;
-    margin-left: 46rem;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
     font-size: 1.2rem;
+    position: relative;
+    border: 2px solid var(--h3main-color);
+    height: 50rem;
+    width: 65%;
+    z-index: 105;
 }
 
 .Skills h1
@@ -538,9 +534,27 @@ span
     font-size: 3rem;
 }
 
+.skills-left
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    z-index: 102;
+    /* align-items: center; */
+}
+
 .skill-content
 {
-    border: 2px solid aqua;
+    /* border: 2px solid rgb(246, 18, 10); */
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* overflow: scroll; */
+    /* overflow-x:auto; */
 }
 
 .Skills h2
@@ -553,16 +567,13 @@ span
 
 .Skills .about3d_bg
 {
-   position: absolute;
-   display: flex;
    z-index: 1;
 }
 
-.about3d_bg
+/* .about3d_bg
 {
-    display: flex;
-    margin-left:40rem ;
-}
+
+} */
 
 .about3d_bg model-viewer
 {
@@ -570,11 +581,10 @@ span
     width: 34rem;
 }
 
-
 .about-content p
 {
     position: relative;
-    font-size: 2.9rem;
+    font-size: 2.1rem;
     margin: 2rem 0 3rem;
     font-family: 'Dancing Script', cursive;
 }
@@ -879,9 +889,19 @@ a
 .main
 {
     opacity: 0;
-    display: none;
+    /* display: none; */
     opacity: 0;
     transition: .3s;
+}
+
+::-webkit-scrollbar
+{
+    opacity: 0;
+}
+
+::-webkit-scrollbar-thumb
+{
+    opacity: 0;
 }
 
 .loding-of
@@ -890,8 +910,23 @@ a
     {
         opacity: 1;
         display: block;
-        z-index: 1000;
+        /* z-index: 1000; */
     }
+
+}
+
+.loding-of::-webkit-scrollbar
+{
+    background: var(--scrolbar-bg-color);
+    width: 1rem;
+    opacity: 1;
+}
+
+.loding-of::-webkit-scrollbar-thumb
+{
+    background: var(--h3main-color);
+    border-radius: 1rem;
+    opacity: 1;
 }
 
 
@@ -907,64 +942,6 @@ a
         font-size:60%;
     }
 
-    .atom
-    {
-        height: 30rem;
-        width: 30rem;
-        margin-left: 30%;
-    }
-}
-
-@media (max-width: 1490px)
-{
-  
-    .atom
-    {
-        height: 30rem;
-        width: 30rem;
-    }
-}
-
-
-@media (max-width:1380px)
-{
-    .about_bg img
-   {
-    margin-left: -40rem;
-   }
-
-   .about3d_bg
-   {
-    margin-left:30rem ;
-   }
-
-}
-
-@media (max-width:1275px)
-{
-    .about_bg img
-   {
-    margin-left: -50rem;
-   }
-
-   .about3d_bg
-   {
-    margin-left:20rem ;
-   }
-
-   .about3d_bg model-viewer
-   {
-    height: 30rem;
-
-    width: 30rem;
-   }
-
-   .home-profile-img
-   {
-    height: 30rem;
-    width: 30rem;
-   }
-
 }
 
 @media (max-width: 1200px)
@@ -973,36 +950,30 @@ a
     {
         font-size: 55%;
     }
-
-    .atom
-    {
-        height: 30rem;
-        width: 30rem;
-        margin-left: 18%;
-    }
-    .about
-    {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    }
 }
 
-@media (max-width: 1100px)
-{
-    .atom
-    {
-        height: 20rem;
-        width: 20rem;
-    }
-}
+@media (max-width:1100px)
+{ 
 
-@media (max-width:1067px)
-{
-    .about_bg img
-   {
-    margin-left: -70rem;
-   }
+    .Skills
+    {
+        /* width: 90%; */
+        gap: 10rem;
+    }
+
+    .skills-left h1
+    {
+        justify-content: center;
+    }
+
+    .skills-right
+    {
+        height: 25rem;
+        width: 25rem;
+        margin-bottom:10rem ;
+        margin-left:-13rem ;
+        /* border: 2px solid red; */
+    }
 
 }
 
@@ -1033,25 +1004,23 @@ a
     {
         display: none;
     }
+    
 
 }
 
 @media (max-width:895px)
 {
-    .about3d_bg
+   .about3d_bg model-viewer
    {
-    margin-left:15rem ;
+    height: 25rem;
+    width: 25rem;
+    /* border: 2px solid red; */
    }
-
 }
 
 @media (max-width:855px)
 {
-    .about_bg img
-    {
-        height: 76rem;
-        width: 140rem;
-    }
+
 
     .home-content h1
     {
@@ -1062,10 +1031,10 @@ a
 
 @media (max-width:840px)
 {
-    .about3d_bg model-viewer
-   {
-     display: none;
-   }
+    .Skills
+    {
+        gap: 0rem;
+    }
 
 }
 
@@ -1073,8 +1042,14 @@ a
 {
     html
     {
-        font-size: 48%;
+        font-size: 55%;
     }
+
+    .Skills
+    {
+        justify-content: space-between;
+    }
+
 }
 
 
@@ -1148,6 +1123,48 @@ a
         transition-delay: .25s;
     }
 
+    .about-items
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid red; */
+        margin: 0;
+    }
+
+    .Skills
+    {
+        width: 90%;
+    }
+
+    .about-left
+    {
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        /* border: 2px solid red; */
+    }
+    
+    .about-left .about-content
+    {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .about-content p
+    {
+        text-align: center;
+    }
+
+    .skills-right model-viewer
+    {
+        height: 35rem;
+        width: 35rem;
+        margin-left: -10rem;
+    }
+
 }
 
 @media (max-width:700px)
@@ -1187,21 +1204,12 @@ a
         align-items: center;
         margin-left: 0;
     }
+    
 }
 
 
 @media (max-width:680px)
 {
-    
-    .about_bg img
-   {
-    margin-left: -100rem;
-   }
-
-   .about-img
-   {
-    margin-left: 24rem;
-   }
 
    .about-content
    {
@@ -1220,48 +1228,10 @@ a
     justify-content: center;
    }  
 
-   .about3d_bg
-   {
-    margin-left:35rem ;
-   }
-   
-   .about3d_bg model-viewer
-   {
-     display: block;
-   }
-
    .home-profile-img
    {
        margin-top: 2.8rem;
    }
-
-}
-
-@media (max-width:570px)
-{
-    .about-img
-    {
-     margin-left: 18rem;
-    }
-
-    .about3d_bg
-    {
-     margin-left:30rem ;
-    }
-
-}
-
-@media (max-width:540px)
-{
-    .about-img
-    {
-     margin-left: 18rem;
-    }
-
-    .about3d_bg
-    {
-     margin-left:28rem ;
-    }
 
 }
 
@@ -1316,25 +1286,6 @@ a
 
 @media (max-width:490px)
 {
-    .about-img
-    {
-     margin-left: 14rem;
-     /* border: 2px solid red; */
-    }
-
-    .about_bg img
-    {
-        height: 10rem;
-        width: 120rem;
-        margin-right: -10rem;
-        /* border: 2px solid red; */
-    }
-
-    .about3d_bg model-viewer
-    {
-        margin-left: -13rem;
-        /* border: 2px solid red; */
-    }
 
     .education-bg img
     {
@@ -1349,7 +1300,6 @@ a
 
     .education-column .edu-right
     {
-        /* border: 2px solid red; */
         width: 100%;
         height: 40rem;
     }
@@ -1359,31 +1309,34 @@ a
 
 @media (max-width:410px)
 {
-    .about-img
+    .skills-left
     {
-     margin-left: 8rem;
+        justify-content: center;
+        width: 100%;
     }
 
-    .about_bg img
+    .skills-left .skill-content
     {
-     margin-left: -100rem;
-     width: 120rem;
-     height: 100rem;
+        border: 2px solid green;
+        width: 100%;
+        align-items: center;
     }
-
     .about3d_bg
     {
-     margin-left:12rem ;
+     /* margin-left:12rem ; */
+     display: none;
     }
+
+
 
 }
 
 @media (max-width:348px)
 {
-    .about-img
+    /* .about-img
     {
      margin-left: 6.5rem;
-    }
+    } */
 
     .about3d_bg
     {
