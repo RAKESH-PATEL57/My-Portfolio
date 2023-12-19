@@ -731,13 +731,84 @@ span
 }
 
 /*************   Starting projects section ***********/
-
-
-a
+.projects
 {
-    color: var(--color);
+    min-height: 100vh;
+    width: 100%;
 }
 
+.projects .project-content
+{
+    display: flex;
+    /* border: 2px solid red; */
+    z-index: 100;
+}
+
+.project-content .card
+{
+    border: 2px solid aqua;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem;   */
+    height: 20vw;
+    width: 24vw;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.card .cursor1
+{
+    position: absolute;
+    /* width: fit-content; */
+    height: 5.5vw;
+    width: 5.5vw;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    padding: 1rem;
+    color: #fff;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none;
+    opacity: 0; */
+    font-size: 1.6vw;
+    font-weight: 600;
+    background:rgba(2, 255, 251, 0.2);
+    transform: translate(-50%, -50%);
+}
+
+.card img
+{
+    height:100%;
+    width: 100%;
+    /* object-fit: cover; */
+    opacity: 0.5;
+    transition: .3s;
+}
+
+.card:hover img
+{
+    opacity: 0.3;
+}
+
+.card h4
+{
+    position: absolute;
+    bottom: 10%;
+    font-size: 2rem;
+    transition: .3s;
+}
+
+.card:hover h4
+{
+    bottom: -50%;
+}
 /*************  Ending Links to our projects   ***********/
 
 
