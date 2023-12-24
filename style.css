@@ -744,16 +744,27 @@ span
 .projects .project-content
 {
     display: flex;
-    /* gap: 7rem; */
-    justify-content: space-between;
-    /* border: 2px solid red; */
     flex-wrap: wrap;
-    row-gap: 10rem;
+    align-items: center;
+    /* border: 2px solid red; */
     column-gap: 5rem;
     z-index: 100;
+    /* position: relative; */
 }
 
-.project-content .card
+.project-content .dtlcard
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 25vw;
+    height: 27vw;
+    /* border: 2px solid red; */
+}
+
+.dtlcard .card
 {
     border: 1px solid rgb(255, 255, 255);
     border-radius: 1rem;
@@ -764,7 +775,8 @@ span
     /* padding: 1rem;   */
     height: 20vw;
     width: 20vw;
-    position: relative;
+    position: absolute;
+    top: 5%;
     overflow: hidden;
     cursor: pointer;
     z-index: 100;
@@ -808,34 +820,35 @@ span
     opacity: 0.3;
 }
 
-.card #w-heading
-{
-    position: absolute;
-    bottom: 40%;
-    font-size: 5rem;
-    transition: .3s;
-    /* color: #fff; */
-    font-weight: 800;
-    /* -webkit-text-stroke-width: 2px; */
-    /* -webkit-text-stroke-color:black; */
-}
-
-.card:hover #w-heading
-{
-    bottom: -20%;
-}
-
-.card #w-open
+.card .w-open
 {
     /* border: 2px solid red; */
     position: absolute;
     top: -50%;
 }
 
-.card:hover #w-open
+.card:hover .w-open
 {
     top: 40%;
 }
+
+.dtlcard .w-heading
+{
+    position: absolute;
+    bottom: 0%;
+    font-size: 4rem;
+    transition: .3s;
+    color: #fff;
+    /* font-weight: 800; */
+    text-shadow: none;
+    -webkit-text-stroke-width: 0px;
+    /* -webkit-text-stroke-color:black; */
+}
+
+/* .project-content:hover .w-heading
+{
+    bottom: -20%;
+} */
 
 /*************  Ending Links to our projects   ***********/
 
