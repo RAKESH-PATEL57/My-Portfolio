@@ -734,7 +734,7 @@ span
 .projects
 {
     min-height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -744,24 +744,25 @@ span
 .projects .project-content
 {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     /* border: 2px solid red; */
     column-gap: 5rem;
     z-index: 100;
+    width: 100%;
     /* position: relative; */
 }
 
 .project-content .dtlcard
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
-    width: 25vw;
+    width: 100%;
     height: 27vw;
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 
 .dtlcard .card
@@ -773,20 +774,20 @@ span
     justify-content: center;
     align-items: center;
     /* padding: 1rem;   */
-    height: 20vw;
-    width: 20vw;
-    position: absolute;
-    top: 5%;
+    height: 100%;
+    width: 35%;
+    position: relative;
+    /* top: 5%; */
     overflow: hidden;
     cursor: pointer;
     z-index: 100;
     box-shadow: -5px 15px 10px 2px rgba(0, 255, 255, 0.437);
 }
 
-.card .cursor1
+/* .card .cursor1
 {
     position: absolute;
-    /* width: fit-content; */
+    /* width: fit-content; 
     height: 5.5vw;
     width: 5.5vw;
     border: 2px solid aqua;
@@ -798,13 +799,13 @@ span
     justify-content: center;
     align-items: center;
     /* display: none;
-    opacity: 0; */
+    opacity: 0; 
     font-size: 1.6vw;
     font-weight: 600;
     background:rgba(2, 255, 251, 0.2);
     transform: translate(-50%, -50%);
     opacity: 0;
-}
+} */
 
 .card img
 {
@@ -832,18 +833,26 @@ span
     top: 40%;
 }
 
-.dtlcard .w-heading
+/* quick deatils about the project  */
+
+.dtlcard .about-project
+{
+    border: 2px solid red;
+    width: 50%;
+}
+
+/* .dtlcard .w-heading
 {
     position: absolute;
     bottom: 0%;
     font-size: 4rem;
     transition: .3s;
     color: #fff;
-    /* font-weight: 800; */
+    /* font-weight: 800; 
     text-shadow: none;
     -webkit-text-stroke-width: 0px;
-    /* -webkit-text-stroke-color:black; */
-}
+    /* -webkit-text-stroke-color:black; 
+} */
 
 /* .project-content:hover .w-heading
 {
