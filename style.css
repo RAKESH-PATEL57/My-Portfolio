@@ -14,13 +14,13 @@
     font-family: 'poppins', sans-serif;
 }
 
-.dark-mode
+/* .dark-mode
 {
 
     --bg-color:#000000;
     --second-bg-color:#181616;
     --main-color:#f700ff;
-}
+} */
 
 :root 
 {
@@ -29,7 +29,7 @@
     --second-bg-color:#000000;
 
     --h3main-color:#00ffff;
-    --text-color:#ffffff;
+    --font-color:#ffffff;
 
     --icon-color:#00ffff;
     --icon-hover-color:#f700ff;
@@ -82,7 +82,7 @@ html
 body
 {
     background: var(--bg-color);
-    color: var(--text-color);
+    color: var(--font-color);
 }
 
 .header
@@ -136,7 +136,7 @@ body
 {
     position: relative;
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--font-color);
     font-weight: 600; 
 }
 
@@ -148,7 +148,7 @@ body
 .navbar a
 {
     font-size: 1.7rem;
-    color:var(--text-color);
+    color:var(--font-color);
     font-weight: 500;
     margin-left: 3.5rem;
     transition: .3s;
@@ -164,7 +164,7 @@ body
 {
     position: relative;
     font-size: 3.6rem;
-    color: var(--text-color);
+    color: var(--font-color);
     cursor: pointer;
     display: none;
 }
@@ -326,7 +326,7 @@ section
     font-size: 1.8rem;
     font-weight: 600;
     letter-spacing: .1rem;
-    color: var(--text-color);
+    color: var(--font-color);
     z-index: 1;
     overflow: hidden;
     transition: .5s;
@@ -454,7 +454,7 @@ span
 .heading
 {
     position: relative;
-    font-size: 5rem;
+    font-size: 6.5rem;
     text-align: center;
 }
 
@@ -762,7 +762,7 @@ span
     position: relative;
     width: 100%;
     height: 27vw;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .dtlcard .card
@@ -781,7 +781,47 @@ span
     overflow: hidden;
     cursor: pointer;
     z-index: 100;
+    transition: .4s ease-in;
     box-shadow: -5px 15px 10px 2px rgba(0, 255, 255, 0.437);
+}
+
+@media (prefers-reduced-motion: no-preference)
+{
+   .card
+   {
+    animation: projectOpen linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+    scale: .8;
+    opacity: 0;
+   }
+
+   .about-project
+   {
+    animation: projectOpen linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+    scale: .8;
+    opacity: 0;
+    position: absolute;
+    right: -50%;
+    transition: .5s;
+   }
+    
+    @keyframes projectOpen
+{
+    100%{
+        scale: 1;
+        opacity: 1;
+        right: 0%;
+    }
+}
+
+}
+
+.card:hover
+{
+    box-shadow: 5px 15px 10px 2px rgba(0, 255, 255, 0.437);
 }
 
 /* .card .cursor1
@@ -821,6 +861,18 @@ span
     opacity: 0.3;
 }
 
+.card .w-click
+{
+    position: absolute;
+    bottom: 40%;
+}
+
+.card:hover .w-click
+{
+    /* opacity: 0; */
+    bottom: -50%;
+}
+
 .card .w-open
 {
     /* border: 2px solid red; */
@@ -837,27 +889,22 @@ span
 
 .dtlcard .about-project
 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 50%;
 }
 
-/* .dtlcard .w-heading
+.about-project .project-heading
 {
-    position: absolute;
-    bottom: 0%;
-    font-size: 4rem;
-    transition: .3s;
-    color: #fff;
-    /* font-weight: 800; 
+    font-size: 4.5rem;
     text-shadow: none;
-    -webkit-text-stroke-width: 0px;
-    /* -webkit-text-stroke-color:black; 
-} */
+}
 
-/* .project-content:hover .w-heading
+.about-project .project-para
 {
-    bottom: -20%;
-} */
+    color: var(--font-color);
+    font-size: 1.4rem;
+}
+
 
 /*************  Ending Links to our projects   ***********/
 
@@ -906,7 +953,7 @@ span
     height: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: var(--text-color);
+    color: var(--font-color);
     background: transparent;
     border-radius: .6rem;
     border: .2rem solid var(--main-color);
@@ -916,7 +963,7 @@ span
 .contact form .input-box .input-field input::placeholder
 .contact form .textarea-field textarea::placeholder
 {
-    color: var(--text-color);
+    color: var(--font-color);
 }
 
 .contact form .focus
