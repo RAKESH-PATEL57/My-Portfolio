@@ -91,18 +91,21 @@ body
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem 5%;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 500;
     transition: .3s;
+    /* border-bottom: 1px solid var(--main-color); */
 }
 
 .header.sticky                             
 {
-    background:linear-gradient(rgb(44, 43, 43),#00000000);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid white;
+    /* background:linear-gradient(rgb(44, 43, 43),#00000000); */
 }
 
 
@@ -447,7 +450,7 @@ span
     gap: 2rem;
     background: var(--second-bg-color);
     padding-bottom: 6rem;
-    border-bottom: .15rem solid rgb(0, 195, 255);
+    /* border-bottom: .15rem solid rgb(0, 195, 255); */
     position: relative;
 }
 
@@ -611,8 +614,7 @@ span
     flex-direction: column;
     min-height: auto;
     padding-bottom: 5rem;
-    border-bottom: .15rem solid rgb(0, 195, 255);
-    
+    /* border-bottom: .15rem solid rgb(0, 195, 255); */
 }
 
 
