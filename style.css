@@ -1308,10 +1308,10 @@ span
 
 @media (max-width: 768px)
 {
-    .header
+    /* .header
     {
         background: var(--bg-color);
-    }
+    } */
     
     #menu-icon
     {
