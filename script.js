@@ -58,7 +58,7 @@ window.onscroll = () => {
 // };
 let subBtn = document.getElementById("subbtn");
 
-subBtn.onclick = () =>
+subBtn.addEventListener("click", (e) => 
 {
 
   let userMsg = document.getElementById("message").value;
@@ -74,7 +74,7 @@ subBtn.onclick = () =>
   
   else
   {
-  
+    e.preventDefault();
     var params = {
       name: userName,
       email: userEmail,
@@ -101,7 +101,7 @@ subBtn.onclick = () =>
   }
 
 
-}
+})
 
 
 
@@ -178,11 +178,6 @@ function loading()
 {
   document.querySelector('.loading-page').classList.add('loding-off');
   document.body.classList.add('loding-of');
-  // window.scroll = 'no-scroll';
-  // document.querySelector('#home').style.display = 'block';
-  // document.querySelector('#about').style.display = 'block';
-  // document.querySelector('#education').style.display = 'block';
-  // document.querySelector('#contact').style.display = 'block';
 }
 
 function fadeOut()
@@ -193,9 +188,82 @@ function fadeOut()
 
 window.onload = fadeOut;
 
-// document.querySelector('#home').style.display = 'none';
-// document.querySelector('#about').style.display = 'none';
-// document.querySelector('#education').style.display = 'none';
-// document.querySelector('#contact').style.display = 'none';
+// projects section  
+
+let card = document.querySelector(".card");
+// let cursorF = document.querySelector(".cursor1");
+// let weather = document.querySelector("#weather");
+
+// function on(){
+
+//   card.addEventListener("mousemove", function(e){
+//     gsap.to(cursorF,{
+//       x:e.x ,
+//       y:e.y
+//     })
+//     cursorF.style.left = ( e.x - 130 )+ "px";
+//     cursorF.style.top = ( e.y - 280 ) + "px";
+//   })
+  
+// }
+// card.addEventListener("mouseenter",function(){
+//   on();
+//   gsap.to(cursorF,{
+//       scale:1,
+//       opacity:1
+//   })
+// })
+
+// card.addEventListener("mouseleave",function(){
+//   gsap.to(cursorF,{
+//       scale:0,
+//       opacity:0
+//   })
+// })  
+
+// cursorF.onclick = () =>{
+//     // weather.href="https://rakesh-patel57.github.io/Weather-Web/";
+//     window.open("https://rakesh-patel57.github.io/Weather-Web/", "_blank");
+// } 
+
+card.onclick = () => {
+  window.open("https://rakesh-patel57.github.io/Weather-Web/", "_blank");
+}
 
 
+
+
+
+
+
+// profile-pic animation btn 
+// let animationStartBtn = document.querySelector('#animation-start');
+// let firstArrow = document.querySelector('.arrow-one-part');
+// let secondArrow = document.querySelector('.arrow-two-part');
+// let thirdArrow = document.querySelector('.arrow-three-part');
+// let fourthArrow = document.querySelector('.arrow-four-part');
+
+// animationStartBtn = () => {
+  
+//   document.body.classList.toggle('home-profile-pic-animationStartOff');
+//   console.log("click");
+// }
+
+// animationStartBtn.addEventListener ('click', () =>
+// {
+//   if(animationStartBtn.innerHTML == "Off-Animation")
+//   {
+//     animationStartBtn.innerHTML= "Animate" 
+//   }
+//   else
+//   {
+//     animationStartBtn.innerHTML= "Off-Animation"
+//   }
+
+
+//   firstArrow.classList.toggle('home-profile-pic-animationStartOff');
+//   secondArrow.classList.toggle('home-profile-pic-animationStartOff');
+//   thirdArrow.classList.toggle('home-profile-pic-animationStartOff');
+//   fourthArrow.classList.toggle('home-profile-pic-animationStartOff');
+//   console.log("click");
+// })
