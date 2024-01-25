@@ -797,7 +797,15 @@ span
 {
     position: relative;
     display: inline-block;
-    font-size: 3rem;
+    font-size: clamp(1rem,8vw,5rem);
+}
+
+.about-content p
+{
+    position: relative;
+    font-size: clamp(2rem,4vw,2.3rem);
+    margin: 2rem 0 3rem;
+    font-family: 'Dancing Script', cursive;
 }
 
 .Skills
@@ -866,14 +874,6 @@ span
 {
     height: 33rem;
     width: 34rem;
-}
-
-.about-content p
-{
-    position: relative;
-    font-size: 2.1rem;
-    margin: 2rem 0 3rem;
-    font-family: 'Dancing Script', cursive;
 }
 
 /*************   about-section end   **************/
