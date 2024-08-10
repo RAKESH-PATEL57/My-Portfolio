@@ -1,0 +1,89 @@
+[
+  {
+    "id": 1,
+    "name": "Motivation",
+    "githubLink": "https://github.com/RAKESH-PATEL57/Motivation-Website",
+    "liveLink": "https://rakesh-patel57.github.io/Motivation-Website/",
+    "imageLink": "./images/projects_images/motivation.png",
+    "features_Skills": [
+      {
+        "points": "Comprehensive Motivation Content: Provides a variety of motivational quotes, stories, and tips to inspire and encourage users."
+      },
+      {
+        "points": "User-Friendly Interface: Designed to be easy to navigate and visually appealing, ensuring a smooth user experience."
+      },
+      {
+        "points": "Speaker Functionality: Includes a speaker feature that allows users to listen to motivational content instead of reading it, enhancing accessibility and user convenience."
+      },
+      {
+        "points": "Responsive Design: Ensures the website is accessible and looks great on all devices, from desktops to mobile phones."
+      },
+      {
+        "points": "Tech stack : HTML5, Css3/Scss, Canvas, and JavaScript(ES6)"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Restaurant",
+    "githubLink": "https://github.com/RAKESH-PATEL57/Our-Restaurant-2",
+    "liveLink": "https://rakesh-patel57.github.io/Our-Restaurant-2/",
+    "imageLink": "./images/projects_images/restaurant.png",
+    "features_Skills": [
+      {
+        "points": "Delight in our visually appealing website offering effortless browsing of our diverse menu and easy reservation-making."
+      },
+      {
+        "points": "Embark on a culinary journey enhanced by technology, experiencing the fusion of flavours and web innovation"
+      },
+      {
+        "points": "Tech stack : HTML5, Css3/Scss, Canvas, and JavaScript(ES6)"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "MultiCalculator",
+    "githubLink": "https://github.com/RAKESH-PATEL57/Multiple-Calculator",
+    "liveLink": "https://rakesh-patel57.github.io/Multiple-Calculator/",
+    "imageLink": "./images/projects_images/multicalculator.png",
+    "features_Skills": [
+      {
+        "points": "Crafted a dynamic multi-calculator website with arithmetic, BMI, sample interest, and CGPA calculators."
+      },
+      {
+        "points": "Ensured seamless user experience with intuitive interfaces and efficient calculations."
+      },
+      {
+        "points": "Delivered a versatile tool catering to diverse mathematical needs."
+      },
+      {
+        "points": "Tech stack:  HTML5, Css3/Scss, and JavaScript."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Universe",
+    "githubLink": "https://github.com/RAKESH-PATEL57/Planet-Details",
+    "liveLink": "https://rakesh-patel57.github.io/Planet-Details/",
+    "imageLink": "./images/projects_images/Universe.png",
+    "features_Skills": [
+      {
+        "points": "Planet Information: Retrieves and displays detailed information about all planets discovered till now."
+      },
+      {
+        "points": "RESTful API Integration: Uses a RESTful API to dynamically fetch and update planet details."
+      },
+      {
+        "points": "Comprehensive Data: Provides information about each planet, including various attributes and characteristics."
+      },
+      {
+        "points": "Responsive Design: Ensures the application is accessible and looks great on all devices. "
+      },
+      {
+        "points": "Tech stacks: Html5, Css3, Javascript(es6)."
+      }
+    ]
+  }
+]
