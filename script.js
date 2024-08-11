@@ -96,19 +96,19 @@ subBtn.addEventListener("click", (e) =>
 
 
 //********************* loading section   ******************************
-function loading()
-{
-  document.querySelector('.loading-page').classList.add('loding-off');
-  document.body.classList.add('loding-of');
-}
+// function loading()
+// {
+//   document.querySelector('.loading-page').classList.add('loding-off');
+//   document.body.classList.add('loding-of');
+// }
 
-function fadeOut()
-{
-  setInterval(loading, 1);
-}
+// function fadeOut()
+// {
+//   setInterval(loading, 1);
+// }
 
 
-window.onload = fadeOut;
+// window.onload = fadeOut;
 
 // projects section  
 let projectsContainer = document.querySelector(".projects-list");
@@ -211,3 +211,54 @@ function removeLoader(loadingremove)
 }
 
 //*******************************   loader [end]  *******************************
+
+// generating dynamic elements [ end ] ********************************************
+
+
+// let card = document.querySelector(".card");
+// let cursorF = document.querySelector(".cursor1");
+// let weather = document.querySelector("#weather");
+
+
+// cursorF.onclick = () =>{
+//     // weather.href="https://rakesh-patel57.github.io/Weather-Web/";
+//     window.open("https://rakesh-patel57.github.io/Weather-Web/", "_blank");
+// } 
+
+// card.onclick = () => {
+//   window.open("https://rakesh-patel57.github.io/Weather-Web/", "_blank");
+// }
+
+
+
+
+
+
+
+// profile-pic animation btn 
+// let animationStartBtn = document.querySelector('#animation-start');
+// let firstArrow = document.querySelector('.arrow-one-part');
+// let secondArrow = document.querySelector('.arrow-two-part');
+// let thirdArrow = document.querySelector('.arrow-three-part');
+// let fourthArrow = document.querySelector('.arrow-four-part');
+
+
+
+// animationStartBtn.addEventListener ('click', () =>
+// {
+//   if(animationStartBtn.innerHTML == "Off-Animation")
+//   {
+//     animationStartBtn.innerHTML= "Animate" 
+//   }
+//   else
+//   {
+//     animationStartBtn.innerHTML= "Off-Animation"
+//   }
+
+
+//   firstArrow.classList.toggle('home-profile-pic-animationStartOff');
+//   secondArrow.classList.toggle('home-profile-pic-animationStartOff');
+//   thirdArrow.classList.toggle('home-profile-pic-animationStartOff');
+//   fourthArrow.classList.toggle('home-profile-pic-animationStartOff');
+//   console.log("click");
+// })
