@@ -1,4 +1,4 @@
-
+import projects from "./json/projects.json" with{ type: "json" };
 //toggle icon navbar
 let menuIcon = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
@@ -7,6 +7,7 @@ menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
   navbar.classList.toggle("active");
 };
+
 
 //scroll sections
 let sections = document.querySelectorAll("section");
@@ -19,7 +20,7 @@ window.onscroll = () => {
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
 
-    console.log(offset);
+    // console.log(offset);
 
     if (top >= offset && top < offset + height) {
       // active navbar links
@@ -28,14 +29,10 @@ window.onscroll = () => {
         document.querySelector("header #nav a[href*=" + id + "]").classList.add("active");
       });
 
-      // active sections for animation on scroll
-      sec.classList.add("show-animate");
+    
     }
 
-     //animation that repeats on scroll
-    else {
-      sec.classList.remove("show-animate");
-    }
+  
   });
 
   // sticky header
@@ -50,12 +47,6 @@ window.onscroll = () => {
   navbar.classList.remove("active");
 };
 
-// dark mode light
-// let darkModeIcon = document.querySelector("#darkMode-icon");
-// darkModeIcon.onclick = () => {
-//   darkModeIcon.classList.toggle("bx-sun");
-//   document.body.classList.toggle("dark-mode");
-// };
 let subBtn = document.getElementById("subbtn");
 
 subBtn.addEventListener("click", (e) => 
@@ -101,76 +92,7 @@ subBtn.addEventListener("click", (e) =>
   }
 
 
-})
-
-
-
-
-
-
-
-
-// Adding Gsap Animations   
-
-// var tl = gsap.timeline();
-
-// tl.from("header a",{
-//   y:-200,
-//   opacity:0,
-//   duration:0.8,
-// }, home)
-
-// tl.from("#nav",{
-//   y:-200,
-//   opacity:0,
-//   duration:1,
-// }, home)
-
-// tl.from("#left-intro",{
-//   x:-700,
-//   duration:2,
-//   opacity:0
-// }, home)
-
-
-// tl.from("#home-profile-pic .arrow-one",{
-//   rotate:-90,
-//   duration:2,
-//   opacity:0,
-//   // scale:0
-// }, home)
-
-// tl.from("#home-profile-pic img",{
-//   duration:2,
-//   opacity:0,
-//   scale:0.5
-// }, home)
-
-
-// tl.from(".home-sci",{
-//   duration:1,
-//   opacity:0,
-//   scale:0.5,
-//   stagger:0.1
-// })
-
-
-// tl.from(".home-sci *",{
-//   y:-100,
-//   duration:1,
-//   delay:0.5,
-//   opacity:0,
-//   stagger:0.2
-// })
-// tl.from("#education ",{
-//   y:-100,
-//   duration:1,
-//   delay:0.5,
-//   opacity:0,
-//   stagger:0.2,
-//   scrollTrigger:true
-// })
-
+});
 
 
 //********************* loading section   ******************************
@@ -182,88 +104,110 @@ function loading()
 
 function fadeOut()
 {
-  setInterval(loading, 2000);
+  setInterval(loading, 1);
 }
 
 
 window.onload = fadeOut;
 
 // projects section  
+let projectsContainer = document.querySelector(".projects-list");
 
-let card = document.querySelector(".card");
-// let cursorF = document.querySelector(".cursor1");
-// let weather = document.querySelector("#weather");
+projects.forEach((projectDetails, index) => {
+  const projecCard = `
+      <div class="project-card">
+        <div class="projectLinkImg loading toTargetLoadingElement">
+            <div class="projectImgBtn">
+                <a target="_blank" href="${projectDetails.githubLink}" class="btn">Code</a>
+                <a target="_blank" href="${(projectDetails.liveLink)}" class="btn">Live Demo</a>
+            </div>
+            <img loading="lazy" src="${projectDetails.imageLink}" alt="${projectDetails.name}_Website"></img>
+        </div>
+        <div class="projectDetails">
+              <h1 class="loading toTargetLoadingElement">${projectDetails.name}</h1>
+              <ul>
+                ${project_Features_Skills(projectDetails.features_Skills)}
+              </ul>   
+        </div>
+      </div>`;
+      projectsContainer.insertAdjacentHTML("beforeend",projecCard);     
+    });
+    
+    
+    function project_Features_Skills(features_Skills)
+    {
+    let liList = "";
 
-// function on(){
+    features_Skills.forEach((details) => {
+      liList += `<li class="loading toTargetLoadingElement testy">${details.points}</li>`;
+    });
 
-//   card.addEventListener("mousemove", function(e){
-//     gsap.to(cursorF,{
-//       x:e.x ,
-//       y:e.y
-//     })
-//     cursorF.style.left = ( e.x - 130 )+ "px";
-//     cursorF.style.top = ( e.y - 280 ) + "px";
-//   })
+    return liList;
+
+  }
+
+  //************/ Animate when scrolling [[     Start     ]]   *********************
+
+  let allSectionNames = document.querySelectorAll(".sectionNames")
+
+  let allSkillsImg = document.querySelectorAll(".skills-img");
+  let allProjectCard = document.querySelectorAll(".project-card");
+
+  function animteProjectCard()
+  {
+    const trigger = window.innerHeight;
+
+    allSkillsImg.forEach((currSkillImg) => {
+      const skillImg = currSkillImg.getBoundingClientRect().bottom;
+
+      if(skillImg < trigger) 
+      {
+        currSkillImg.classList.add("skillImgAnimate");
+      }
+      else
+      {
+        currSkillImg.classList.remove("skillImgAnimate");
+      }
+    });
+    allProjectCard.forEach((projectCard) => {
+      const projectCardTop = projectCard.getBoundingClientRect().top;
+
+      if(projectCardTop < trigger) 
+      {
+        projectCard.classList.add("projectAnimate");
+      }
+      else
+      {
+        projectCard.classList.remove("projectAnimate");
+      }
+    });
+  }
+
+  window.addEventListener("scroll",() =>{
+    animteProjectCard();
+  });
+
+  //************/ Animate when scrolling [[      End      ]]   *********************
   
-// }
-// card.addEventListener("mouseenter",function(){
-//   on();
-//   gsap.to(cursorF,{
-//       scale:1,
-//       opacity:1
-//   })
-// })
+  //*******************************   loader [start]  ******************************
+  
+  let allLoading = document.querySelectorAll(".toTargetLoadingElement");
+  
+   let time;
+   let i = 0;
+   time = setInterval(() => {
+      removeLoader(allLoading[i]);
+      i++;
+      if(i == allLoading.length)
+      {
+        clearInterval(time);
+      }
+  
+  }, 50);
 
-// card.addEventListener("mouseleave",function(){
-//   gsap.to(cursorF,{
-//       scale:0,
-//       opacity:0
-//   })
-// })  
-
-// cursorF.onclick = () =>{
-//     // weather.href="https://rakesh-patel57.github.io/Weather-Web/";
-//     window.open("https://rakesh-patel57.github.io/Weather-Web/", "_blank");
-// } 
-
-card.onclick = () => {
-  window.open("https://rakesh-patel57.github.io/Weather-Web/", "_blank");
+function removeLoader(loadingremove)
+{  
+  loadingremove.classList.remove("loading");
 }
 
-
-
-
-
-
-
-// profile-pic animation btn 
-// let animationStartBtn = document.querySelector('#animation-start');
-// let firstArrow = document.querySelector('.arrow-one-part');
-// let secondArrow = document.querySelector('.arrow-two-part');
-// let thirdArrow = document.querySelector('.arrow-three-part');
-// let fourthArrow = document.querySelector('.arrow-four-part');
-
-// animationStartBtn = () => {
-  
-//   document.body.classList.toggle('home-profile-pic-animationStartOff');
-//   console.log("click");
-// }
-
-// animationStartBtn.addEventListener ('click', () =>
-// {
-//   if(animationStartBtn.innerHTML == "Off-Animation")
-//   {
-//     animationStartBtn.innerHTML= "Animate" 
-//   }
-//   else
-//   {
-//     animationStartBtn.innerHTML= "Off-Animation"
-//   }
-
-
-//   firstArrow.classList.toggle('home-profile-pic-animationStartOff');
-//   secondArrow.classList.toggle('home-profile-pic-animationStartOff');
-//   thirdArrow.classList.toggle('home-profile-pic-animationStartOff');
-//   fourthArrow.classList.toggle('home-profile-pic-animationStartOff');
-//   console.log("click");
-// })
+//*******************************   loader [end]  *******************************
