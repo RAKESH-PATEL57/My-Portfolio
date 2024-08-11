@@ -117,10 +117,6 @@ projects.forEach((projectDetails, index) => {
   const projecCard = `
       <div class="project-card">
         <div class="projectLinkImg loading toTargetLoadingElement">
-            <div class="projectImgBtn">
-                <a target="_blank" href="${projectDetails.githubLink}" class="btn">Code</a>
-                <a target="_blank" href="${(projectDetails.liveLink)}" class="btn">Live Demo</a>
-            </div>
             <img loading="lazy" src="${projectDetails.imageLink}" alt="${projectDetails.name}_Website"></img>
         </div>
         <div class="projectDetails">
@@ -128,6 +124,10 @@ projects.forEach((projectDetails, index) => {
               <ul>
                 ${project_Features_Skills(projectDetails.features_Skills)}
               </ul>   
+               <div class="projectBtn">
+                <a target="_blank" href="${projectDetails.githubLink}" class="btn">Code</a>
+                <a target="_blank" href="${(projectDetails.liveLink)}" class="btn">Live Demo</a>
+            </div>
         </div>
       </div>`;
       projectsContainer.insertAdjacentHTML("beforeend",projecCard);     
@@ -211,54 +211,3 @@ function removeLoader(loadingremove)
 }
 
 //*******************************   loader [end]  *******************************
-
-// generating dynamic elements [ end ] ********************************************
-
-
-// let card = document.querySelector(".card");
-// let cursorF = document.querySelector(".cursor1");
-// let weather = document.querySelector("#weather");
-
-
-// cursorF.onclick = () =>{
-//     // weather.href="https://rakesh-patel57.github.io/Weather-Web/";
-//     window.open("https://rakesh-patel57.github.io/Weather-Web/", "_blank");
-// } 
-
-// card.onclick = () => {
-//   window.open("https://rakesh-patel57.github.io/Weather-Web/", "_blank");
-// }
-
-
-
-
-
-
-
-// profile-pic animation btn 
-// let animationStartBtn = document.querySelector('#animation-start');
-// let firstArrow = document.querySelector('.arrow-one-part');
-// let secondArrow = document.querySelector('.arrow-two-part');
-// let thirdArrow = document.querySelector('.arrow-three-part');
-// let fourthArrow = document.querySelector('.arrow-four-part');
-
-
-
-// animationStartBtn.addEventListener ('click', () =>
-// {
-//   if(animationStartBtn.innerHTML == "Off-Animation")
-//   {
-//     animationStartBtn.innerHTML= "Animate" 
-//   }
-//   else
-//   {
-//     animationStartBtn.innerHTML= "Off-Animation"
-//   }
-
-
-//   firstArrow.classList.toggle('home-profile-pic-animationStartOff');
-//   secondArrow.classList.toggle('home-profile-pic-animationStartOff');
-//   thirdArrow.classList.toggle('home-profile-pic-animationStartOff');
-//   fourthArrow.classList.toggle('home-profile-pic-animationStartOff');
-//   console.log("click");
-// })
