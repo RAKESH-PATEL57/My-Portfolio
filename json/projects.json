@@ -85,5 +85,29 @@
         "points": "Tech stacks: Html5, Css3, Javascript(es6)."
       }
     ]
+  },
+  {
+    "id": 5,
+    "name": "Stop-Watch",
+    "githubLink": "https://github.com/RAKESH-PATEL57/Stop-Watch?tab=readme-ov-file",
+    "liveLink": "https://stop-watch-by-rakesh-patel57-github.netlify.app/",
+    "imageLink": "./images/projects_images/Stop-Watch.png",
+    "features_Skills": [
+      {
+        "points": "Fully Responsive: The application is optimized for all devices, from desktops to mobile phones."
+      },
+      {
+        "points": "User-Friendly Interface: Intuitive design with clear controls for starting, stopping, and resetting the stopwatch."
+      },
+      {
+        "points": "Start/Stop Functionality: Easily start and stop the timer with a single click."
+      },
+      {
+        "points": "Reset Option: Users can reset the stopwatch to start a new session."
+      },
+      {
+        "points": "Tech stacks: ReactJS, Css/Scss"
+      }
+    ]
   }
 ]
