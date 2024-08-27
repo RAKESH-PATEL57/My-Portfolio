@@ -1424,101 +1424,55 @@ span
 
 
 
-/************   loader section    ************/
+/*********** starting loading screen    [start]   **********/
 
 .loading-page
 {
-    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 10000;
+    background: black;
     top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #000000;
     display: flex;
-    align-items: center;
     justify-content: center;
-    transition: .5s;
-}
-
-.loading-page span
-{
-    font-size: 4.3rem;
-    -webkit-text-stroke: 0;
-    color: #fff;
-    animation: loading 2s linear infinite;
-    opacity: 0;
-    animation-delay: calc(0.3s * var(--i));
-}
-
-@keyframes loading 
-{
-   0%{
-    opacity: 1;
-   } 
-   50%
-   {
-    opacity: .5;
-   }
-   100%
-   {
-    opacity: 0;
-   }
+    align-items: center;
 }
 
 .loading-page.loding-off
 {
-    bottom: 100%;
-    opacity: 0;
-    /* overflow-y: hidden; */
-}
-
-.main
-{
-    /* display: none; */
-    opacity: 0;
-    opacity: 1;
-    transition: .3s;
-}
-
-::-webkit-scrollbar
-{
-    opacity: 0;
-}
-
-::-webkit-scrollbar-thumb
-{
-    opacity: 0;
-}
-
-.loding-of
-{
-    .main
-    {
-        opacity: 1;
-        display: block;
-        /* z-index: 1000; */
-    }
-
-}
-
-.loding-of::-webkit-scrollbar
-{
-    background: var(--scrolbar-bg-color);
-    width: 1rem;
-    opacity: 1;
-}
-
-.loding-of::-webkit-scrollbar-thumb
-{
-    background: var(--main-color);
-    border-radius: 1rem;
-    opacity: 1;
+    display: none;
 }
 
 
+.loader {
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 3rem;
+    display: inline-grid;
+  }
+  .loader:before,
+  .loader:after {
+    content:"Loading...";
+    color: var(--main-color);
+    grid-area: 1/1;
+    -webkit-mask:linear-gradient(90deg,#000 50%,#0000 0) 0 50%/2ch 100%;
+    animation: loader 1s infinite cubic-bezier(0.5,220,0.5,-220);
+    -webkit-animation: loader 1s infinite cubic-bezier(0.5,220,0.5,-220);
+}
+  .loader:after {
+    -webkit-mask-position:1ch 50%;
+    --s:-1;
+  }
+  @keyframes loader {100%{transform: translateY(calc(var(--s,1)*0.1%));}}
+  
 
 
-/* making responsive */
+/*********** starting loading screen    [ end ]   **********/
+
+
+
+/* making responsive  */
 
 @media (max-width: 1500px)
 {
