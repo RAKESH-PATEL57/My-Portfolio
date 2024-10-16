@@ -68,7 +68,7 @@ html
     scroll-behavior: smooth;
 }
 
-/[[[[[[[[[[[[[[[[[[[   Loading Part   [ Start ] ********]]]]]]]]]]]]]]]]]]]]]]]/
+/*[[[[[[[[[[[[[[[[[[[   Loading Part   [ Start ] ********]]]]]]]]]]]]]]]]]]]]]]]*/
 
 .loading {
     position: relative;
@@ -105,7 +105,7 @@ html
 }
 
 
-/[[[[[[[[[[[[[[[[[[[   Loading Part   [  end  ] ********]]]]]]]]]]]]]]]]]]]]]]]/
+/*[[[[[[[[[[[[[[[[[[[   Loading Part   [  end  ] ********]]]]]]]]]]]]]]]]]]]]]]]*/
 
 
 #particles-js
@@ -977,7 +977,7 @@ span
     filter: drop-shadow(0rem 5rem 10px rgb(4, 198, 220)) invert(100%) hue-rotate(180deg);
 }
 
-/********************    projects section  [[[   Start   ]]]*/
+/********************    projects section  [[[   Start   ]]]***********/
 .projects
 {
     min-height: 100vh;
@@ -1224,8 +1224,8 @@ span
     color: var(--sfont-color);
 }
 
-/********************    projects section  [[[    End    ]]]*/
-/********************    Contact  section  [[[   Start   ]]]*/
+/********************    projects section  [[[    End    ]]]***********/
+/********************    Contact  section  [[[   Start   ]]]***********/
 .contact
 {
     min-height: auto;
@@ -1321,7 +1321,7 @@ span
 }
 
 
-/********************    Contact  section  [[[    End    ]]]*/
+/********************    Contact  section  [[[    End    ]]]***********/
 
 /*********** starting loading screen    [start]   **********/
 
