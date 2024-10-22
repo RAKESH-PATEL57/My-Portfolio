@@ -260,7 +260,6 @@ section
     text-shadow: 0rem 0rem 1.4rem var(--main-color);
     transition: .5s;
 
-    /* border: 2px solid red; */
 }
 
 .home-content .intro-content h3
@@ -278,6 +277,10 @@ section
     align-items: center;
     transition: .5s;
     z-index: 100;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 
@@ -289,20 +292,42 @@ section
     animation-duration: 10s;
     filter: drop-shadow(0px 10px 10px aqua);
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-animation: rotate alternate-reverse infinite;
+    -webkit-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -moz-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -ms-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -o-transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    -webkit-filter: drop-shadow(0px 10px 10px aqua);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
 }
 
 @keyframes rotate
 {
     0%{
         transform: rotate(0deg);
-    }
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
     50%{
         transform: rotate(360deg);
-    }
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
     100%
     {
         transform: rotate(-360deg);
-    }
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -o-transform: rotate(-360deg);
+}
 }
 
 .home-profile-img .arrow-one
@@ -313,16 +338,14 @@ section
     height: 100%;
     border: 3px solid;
     padding: 10px;
-    border-image-source: radial-gradient(
-        circle at top left,
-        aqua,
-        transparent 25%
-    );    
+    border-image-source: radial-gradient(        circle at top left,        aqua,        transparent 25%    );
     border-image-slice: 1;
     z-index: 1;
     transition: .5s;
-    /* animation: arrow-one 3s linear infinite; */
-    /* animation-delay: calc(.3s * var(--i)); */
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .home-profile-img .arrow-one-part
@@ -332,19 +355,23 @@ section
     width: 100%;
     height: 100%;
     border: 3px solid;
-    
     padding: 10px;
-    border-image-source: radial-gradient(
-        circle at top,
-        aqua,
-        transparent 30%
-    );    
+    border-image-source: radial-gradient(        circle at top,        aqua,        transparent 30%    );
     border-image-slice: 1;
     z-index: 1;
     transition: .5s;
     filter: drop-shadow(10px 10px 10px aqua);
-    /* transform: translateY(20px); */
-    transform: translateY(.8rem) rotate(45deg);
+    /*transform: translateY(20px);
+    */transform: translateY(.8rem) rotate(45deg);
+    -webkit-transform: translateY(.8rem) rotate(45deg);
+    -moz-transform: translateY(.8rem) rotate(45deg);
+    -ms-transform: translateY(.8rem) rotate(45deg);
+    -o-transform: translateY(.8rem) rotate(45deg);
+    -webkit-filter: drop-shadow(10px 10px 10px aqua);
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .home-profile-img .arrow-two-part
@@ -354,20 +381,19 @@ section
     width: 100%;
     height: 100%;
     border: 3px solid;
-    
     padding: 10px;
-    border-image-source: radial-gradient(
-        circle at right,
-        aqua,
-        /* rgb(89, 255, 0), */
-        transparent 30%
-    );    
+    border-image-source: radial-gradient(        circle at right,        aqua,        /* rgb(89, 255, 0), */        transparent 30%    );
     border-image-slice: 1;
     z-index: 1;
     transition: .5s;
     filter: drop-shadow(10px 10px 10px aqua);
-    /* transform: translateX(-20px); */
-    transform: translateY(-.8rem) rotate(45deg);
+    /*transform: translateX(-20px);
+    */transform: translateY(-.8rem) rotate(45deg);
+    -webkit-transform: translateY(-.8rem) rotate(45deg);
+    -moz-transform: translateY(-.8rem) rotate(45deg);
+    -ms-transform: translateY(-.8rem) rotate(45deg);
+    -o-transform: translateY(-.8rem) rotate(45deg);
+    -webkit-filter: drop-shadow(10px 10px 10px aqua);
 }
 
 .home-profile-img .arrow-three
