@@ -146,35 +146,7 @@ body
 {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid white;
-    /* background:linear-gradient(rgb(44, 43, 43),#00000000); */
 }
-
-
-/****************************** gsap animation start ***************************/
-/* 
-.gsap-btf
-{
-    /* border: 2px solid red; 
-    position: absolute;
-    /* height: 0%;
-    width: 20vw; 
-    rotate: 90deg;
-    top: 10%;
-    left: 20%;
-    /* z-index: 1000; 
-}
-
-.gsap-btf img
-{
-    height: 60rem;
-    width: 30rem;
-    /* border: 2px solid red; 
-    filter: hue-rotate(220deg) saturate(400%);
-
-} */
-
-/****************************** gsap animation end ***************************/
-
 
 .logo
 {
@@ -201,7 +173,6 @@ body
 .navbar a:hover, .navbar a.active
 {
     color: var(--main-color);
-    font-size: 1.8rem;
 }
 
 #menu-icon
