@@ -68,7 +68,7 @@ html
     scroll-behavior: smooth;
 }
 
-/*[[[[[[[[[[[[[[[[[[[   Loading Part   [ Start ] ********]]]]]]]]]]]]]]]]]]]]]]]*/
+/[[[[[[[[[[[[[[[[[[[   Loading Part   [ Start ] ********]]]]]]]]]]]]]]]]]]]]]]]/
 
 .loading {
     position: relative;
@@ -105,7 +105,7 @@ html
 }
 
 
-/*[[[[[[[[[[[[[[[[[[[   Loading Part   [  end  ] ********]]]]]]]]]]]]]]]]]]]]]]]*/
+/[[[[[[[[[[[[[[[[[[[   Loading Part   [  end  ] ********]]]]]]]]]]]]]]]]]]]]]]]/
 
 
 #particles-js
@@ -424,19 +424,18 @@ section
     width: 100%;
     height: 100%;
     border: 3px solid;
-    
     padding: 10px;
-    border-image-source: radial-gradient(
-        circle at bottom,
-        aqua,
-        transparent 30%
-    );    
+    border-image-source: radial-gradient(        circle at bottom,        aqua,        transparent 30%    );
     border-image-slice: 1;
     z-index: 1;
     transition: .5s;
     filter: drop-shadow(10px 10px 10px aqua);
-    /* transform: translateY(-20px); */
     transform: translateY(-.8rem) rotate(45deg);
+    -webkit-filter: drop-shadow(10px 10px 10px aqua);
+    -webkit-transform: translateY(-.8rem) rotate(45deg);
+    -moz-transform: translateY(-.8rem) rotate(45deg);
+    -ms-transform: translateY(-.8rem) rotate(45deg);
+    -o-transform: translateY(-.8rem) rotate(45deg);
 }
 
 
@@ -447,18 +446,13 @@ section
     width: 100%;
     height: 100%;
     border: 3px solid;
-    
     padding: 10px;
-    border-image-source: radial-gradient(
-        circle at bottom left,
-        aqua,
-        /* rgb(89, 255, 0), */
-        transparent 25%
-    );    
+    border-image-source: radial-gradient(        circle at bottom left,        aqua,        /* rgb(89, 255, 0), */        transparent 25%    );
     border-image-slice: 1;
     z-index: 1;
     transition: .5s;
-    filter: drop-shadow(10px 10px 10px aqua)
+    filter: drop-shadow(10px 10px 10px aqua);
+    -webkit-filter: drop-shadow(10px 10px 10px aqua);
 }
 
 .home-profile-img .arrow-four-part
@@ -468,46 +462,49 @@ section
     width: 100%;
     height: 100%;
     border: 3px solid;
-    
     padding: 10px;
-    border-image-source: radial-gradient(
-        circle at left,
-        aqua,
-        /* rgb(89, 255, 0), */
-        transparent 25%
-    );    
+    border-image-source: radial-gradient(        circle at left,        aqua,        /* rgb(89, 255, 0), */        transparent 25%    );
     border-image-slice: 1;
     z-index: 1;
     transition: .5s;
     filter: drop-shadow(10px 10px 10px aqua);
-    /* transform: translateX(20px); */
-    transform: translateY(.8rem) rotate(45deg);
+    /*transform: translateX(20px);
+    */transform: translateY(.8rem) rotate(45deg);
+    -webkit-transform: translateY(.8rem) rotate(45deg);
+    -moz-transform: translateY(.8rem) rotate(45deg);
+    -ms-transform: translateY(.8rem) rotate(45deg);
+    -o-transform: translateY(.8rem) rotate(45deg);
 }
 
 .home-profile-img .profile-pic
-{   
-    /* position: absolute; */
-    object-fit: cover;
+{
+    /*position: absolute;
+    */object-fit: cover;
     width:85%;
     height: 85%;
     border-radius: 50%;
     border: .2rem solid black;
-    /* transform: scale(1) rotate(-20deg);   */
-    transform: scale(1);  
+    /*transform: scale(1) rotate(-20deg);
+    */transform: scale(1);
     filter: contrast(120%);
     z-index: 105;
-    scale:1.13
+    scale:1.13;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    -webkit-filter: contrast(120%);
 }
 
 #animation-start
 {
     cursor: pointer;
-    /* pointer-events:auto; */
-    position: absolute;
-    /* width: 10rem; */
-    top: 50%;
-    /* left: 50%; */
-    padding: 0% 3%;
+    /*pointer-events:auto;
+    */position: absolute;
+    /*width: 10rem;
+    */top: 50%;
+    /*left: 50%;
+    */padding: 0% 3%;
     border-radius: 1rem;
     background: transparent;
     color: white;
@@ -519,6 +516,10 @@ section
     font-weight: 600;
     letter-spacing: .2rem;
     transition: .5s linear;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 #home-profile-pic:hover #animation-start
@@ -532,7 +533,6 @@ section
 {
     transition: .5s linear;
     animation: none;
-    /* animation: rotate alternate-reverse infinite; */
 }
 
 
@@ -745,12 +745,15 @@ span
     height: 100%;
     border-radius: 50%;
     box-shadow: 0 0 10px var(--profile-pic-shadow-color),
-                0 0 10px var(--profile-pic-shadow-color),
-                0 0 20px var(--profile-pic-shadow-color),
+                0 0 10px var(--profile-pic-shadow-color),                
+                0 0 20px var(--profile-pic-shadow-color),                
                 0 0 40px var(--profile-pic-shadow-color);
-              
-    transform: scale(0.9);         
+    transform: scale(0.9);
     transition: .5s;
+    -webkit-transform: translate(-50%,-50%) rotate(0);
+    -moz-transform: translate(-50%,-50%) rotate(0);
+    -ms-transform: translate(-50%,-50%) rotate(0);
+    -o-transform: translate(-50%,-50%) rotate(0);
 }
 
 
@@ -766,7 +769,6 @@ span
     position: relative;
     font-size: clamp(1rem,4vw,1.7rem);
     margin: 2rem 0 3rem;
-    /* font-family: 'Dancing Script', cursive; */
 }
 
 .Skills
@@ -778,8 +780,7 @@ span
     align-items: center;
     font-size: 1.2rem;
     position: relative;
-    /*border: 2px solid var(--main-color);
-    */box-shadow:inset 0rem 0rem .8rem rgb(128, 128, 128);
+    box-shadow:inset 0rem 0rem .8rem rgb(128, 128, 128);
     height: 50rem;
     width: 60%;
     z-index: 105;
@@ -798,15 +799,12 @@ span
     height: max-content;
     color: #00ffff;
     font-size: 3rem;
-    /* border: 2px solid red; */
 }
 
 .skill-content
 {
     min-height: 40%;
     width: 95%;
-    /* overflow: scroll; */
-    /* border: 2px solid aqua; */
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -842,16 +840,6 @@ span
     margin: calc(.5rem * var(--i)) calc(.2rem * var(--i));
 }
 
-
-/* .Skills .about3d_bg
-{
-   z-index: 1;
-} */
-
-/* .about3d_bg
-{
-
-} */
 
 .about3d_bg model-viewer
 {
@@ -974,7 +962,7 @@ span
     filter: drop-shadow(0rem 5rem 10px rgb(4, 198, 220)) invert(100%) hue-rotate(180deg);
 }
 
-/********************    projects section  [[[   Start   ]]]***********/
+/********************    projects section  [[[   Start   ]]]*/
 .projects
 {
     min-height: 100vh;
@@ -1221,8 +1209,8 @@ span
     color: var(--sfont-color);
 }
 
-/********************    projects section  [[[    End    ]]]***********/
-/********************    Contact  section  [[[   Start   ]]]***********/
+/********************    projects section  [[[    End    ]]]*/
+/********************    Contact  section  [[[   Start   ]]]*/
 .contact
 {
     min-height: auto;
@@ -1318,7 +1306,7 @@ span
 }
 
 
-/********************    Contact  section  [[[    End    ]]]***********/
+/********************    Contact  section  [[[    End    ]]]*/
 
 /*********** starting loading screen    [start]   **********/
 
@@ -1387,22 +1375,7 @@ span
     {
         font-size:60%;
     }
-
-    /* .about-items
-    {
-        flex-direction: column;
-    } */
-    /* .about-items .about-left
-    {
-        align-items: center;
-    }
-
-    .about-left .about-content
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
+  
 
     .about-items .Skills
     {
