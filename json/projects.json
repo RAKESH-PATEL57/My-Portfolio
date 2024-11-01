@@ -25,6 +25,39 @@
   },
   {
     "id": 2,
+    "name": "Weather-Forecast",
+    "githubLink": "https://github.com/RAKESH-PATEL57/Weather-React",
+    "liveLink": "https://weather-forecast-rakeshpatel57.netlify.app/",
+    "imageLink": "./images/projects_images/weather.png",
+    "features_Skills": [
+      {
+        "points": "Geolocation-Based Weather Data: Automatically fetches weather details based on the user's current location"
+      },
+      {
+        "points": "Search Functionality: Users can search for a city by typing its name, with suggestion options."
+      },
+      {
+        "points": "Current Weather Details: Displays temperature, humidity, and a weather icon."
+      },
+      {
+        "points": "Hourly Forecast: Provides hourly weather data for the selected location."
+      },
+      {
+        "points": "Seven-Day Forecast: Shows weather information for the upcoming week."
+      },
+      {
+        "points": "Location Suggestions: Suggests city names as the user types, using Nominatim's geocoding service."
+      },
+      {
+        "points": "Debounced Search: Reduces the number of requests by waiting for a short period after the user stops typing."
+      },
+      {
+        "points": "Tech stack :React, HTML5, Css3/Scss, JavaScript (ES6), Open-Meteo API,Nominatim API (OpenStreetMap),Axios"
+      }
+    ]
+  },
+  {
+    "id": 3,
     "name": "Space-Planets",
     "githubLink": "https://github.com/RAKESH-PATEL57/Space-Website",
     "liveLink": "https://rakesh-patel57.github.io/Space-Website/",
@@ -48,7 +81,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "CRUD Web-App",
     "githubLink": "https://github.com/RAKESH-PATEL57/Synergy-Internship-Project",
     "liveLink": "https://crudwebapp-rakesh-patel57.netlify.app/",
@@ -72,7 +105,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "MultiCalculator",
     "githubLink": "https://github.com/RAKESH-PATEL57/Multiple-Calculator",
     "liveLink": "https://rakesh-patel57.github.io/Multiple-Calculator/",
@@ -93,7 +126,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "Universe",
     "githubLink": "https://github.com/RAKESH-PATEL57/Planet-Details",
     "liveLink": "https://rakesh-patel57.github.io/Planet-Details/",
@@ -117,7 +150,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Stop-Watch",
     "githubLink": "https://github.com/RAKESH-PATEL57/Stop-Watch?tab=readme-ov-file",
     "liveLink": "https://stop-watch-by-rakesh-patel57-github.netlify.app/",
@@ -141,7 +174,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Restaurant (Present)",
     "githubLink": "https://github.com/RAKESH-PATEL57/Our-Restaurant-2",
     "liveLink": "https://rakesh-patel57.github.io/Our-Restaurant-2/",
