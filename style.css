@@ -957,7 +957,6 @@ span
 /********************    projects section  [[[   Start   ]]]***********/
 .projects
 {
-    /* min-height: 100vh; */
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -993,7 +992,6 @@ span
 {
     width: 43%;
     height: 35rem;
-    /* border: 2px solid aqua; */
     position: relative;
 }
 
@@ -1891,7 +1889,7 @@ span
 
     html
     {
-        font-size: 48%;
+        font-size: 44%;
     }
 
     .skills-left
