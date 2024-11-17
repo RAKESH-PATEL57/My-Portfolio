@@ -106,6 +106,36 @@
   },
   {
     "id": 5,
+    "name": "Task Manager Web-App",
+    "githubLink": "https://github.com/RAKESH-PATEL57/Synergy-Internship-Project",
+    "liveLink": "https://crudwebapp-rakesh-patel57.netlify.app/",
+    "imageLink": "./images/projects_images/CRUD.png",
+    "features_Skills": [
+      {
+        "points": "Add, delete, and update tasks with ease."
+      },
+      {
+        "points": "Search for tasks by their title using a dynamic search bar."
+      },
+      {
+        "points": "Mark tasks as completed or pending with a simple toggle."
+      },
+      {
+        "points": "Tasks are saved in `localStorage`, ensuring they remain available even after a page refresh."
+      },
+      {
+        "points": "Tasks are sorted by priority to ensure users can focus on the most important ones first."
+      },
+      {
+        "points": "Fully optimized for both desktop and mobile devices."
+      },
+      {
+        "points": "Tech stack : React, Html5, Scss/Css3"
+      }
+    ]
+  },
+  {
+    "id": 6,
     "name": "MultiCalculator",
     "githubLink": "https://github.com/RAKESH-PATEL57/Multiple-Calculator",
     "liveLink": "https://rakesh-patel57.github.io/Multiple-Calculator/",
@@ -126,7 +156,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Universe",
     "githubLink": "https://github.com/RAKESH-PATEL57/Planet-Details",
     "liveLink": "https://rakesh-patel57.github.io/Planet-Details/",
@@ -150,7 +180,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Stop-Watch",
     "githubLink": "https://github.com/RAKESH-PATEL57/Stop-Watch?tab=readme-ov-file",
     "liveLink": "https://stop-watch-by-rakesh-patel57-github.netlify.app/",
@@ -174,7 +204,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Restaurant (Present)",
     "githubLink": "https://github.com/RAKESH-PATEL57/Our-Restaurant-2",
     "liveLink": "https://rakesh-patel57.github.io/Our-Restaurant-2/",
