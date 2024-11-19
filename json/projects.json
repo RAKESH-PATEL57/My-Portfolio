@@ -107,9 +107,9 @@
   {
     "id": 5,
     "name": "Task Manager Web-App",
-    "githubLink": "https://github.com/RAKESH-PATEL57/Synergy-Internship-Project",
-    "liveLink": "https://crudwebapp-rakesh-patel57.netlify.app/",
-    "imageLink": "./images/projects_images/CRUD.png",
+    "githubLink": "https://github.com/RAKESH-PATEL57/FLARELINK-PVT-LTD-Internship",
+    "liveLink": "https://task-manager-rakesh-patel57.netlify.app/",
+    "imageLink": "./images/projects_images/task-manager.png",
     "features_Skills": [
       {
         "points": "Add, delete, and update tasks with ease."
