@@ -4,7 +4,7 @@
     "name": "Motivation",
     "githubLink": "https://github.com/RAKESH-PATEL57/Motivation-Website",
     "liveLink": "https://rakesh-patel57.github.io/Motivation-Website/",
-    "imageLink": "./images/projects_images/motivation.png",
+    "imageLink": "./images/projects_images/motivation.webp",
     "features_Skills": [
       {
         "points": "Comprehensive Motivation Content: Provides a variety of motivational quotes, stories, and tips to inspire and encourage users."
@@ -28,7 +28,7 @@
     "name": "Weather-Forecast",
     "githubLink": "https://github.com/RAKESH-PATEL57/Weather-React",
     "liveLink": "https://weather-forecast-rakeshpatel57.netlify.app/",
-    "imageLink": "./images/projects_images/weather.png",
+    "imageLink": "./images/projects_images/weather.webp",
     "features_Skills": [
       {
         "points": "Geolocation-Based Weather Data: Automatically fetches weather details based on the user's current location"
@@ -61,7 +61,7 @@
     "name": "Space-Planets",
     "githubLink": "https://github.com/RAKESH-PATEL57/Space-Website",
     "liveLink": "https://rakesh-patel57.github.io/Space-Website/",
-    "imageLink": "./images/projects_images/Planets.png",
+    "imageLink": "./images/projects_images/Planets.webp",
     "features_Skills": [
       {
         "points": "Displays detailed information about the nine planets in an interactive format."
@@ -85,7 +85,7 @@
     "name": "CRUD Web-App",
     "githubLink": "https://github.com/RAKESH-PATEL57/Synergy-Internship-Project",
     "liveLink": "https://crudwebapp-rakesh-patel57.netlify.app/",
-    "imageLink": "./images/projects_images/CRUD.png",
+    "imageLink": "./images/projects_images/CRUD.webp",
     "features_Skills": [
       {
         "points": "User Management: Add, edit, delete, and list users dynamically."
@@ -109,7 +109,7 @@
     "name": "Task Manager Web-App",
     "githubLink": "https://github.com/RAKESH-PATEL57/FLARELINK-PVT-LTD-Internship",
     "liveLink": "https://task-manager-rakesh-patel57.netlify.app/",
-    "imageLink": "./images/projects_images/task-manager.png",
+    "imageLink": "./images/projects_images/task-manager.webp",
     "features_Skills": [
       {
         "points": "Add, delete, and update tasks with ease."
@@ -139,7 +139,7 @@
     "name": "MultiCalculator",
     "githubLink": "https://github.com/RAKESH-PATEL57/Multiple-Calculator",
     "liveLink": "https://rakesh-patel57.github.io/Multiple-Calculator/",
-    "imageLink": "./images/projects_images/multicalculator.png",
+    "imageLink": "./images/projects_images/multicalculator.webp",
     "features_Skills": [
       {
         "points": "Crafted a dynamic multi-calculator website with arithmetic, BMI, sample interest, and CGPA calculators."
@@ -160,7 +160,7 @@
     "name": "Universe",
     "githubLink": "https://github.com/RAKESH-PATEL57/Planet-Details",
     "liveLink": "https://rakesh-patel57.github.io/Planet-Details/",
-    "imageLink": "./images/projects_images/Universe.png",
+    "imageLink": "./images/projects_images/Universe.webp",
     "features_Skills": [
       {
         "points": "Planet Information: Retrieves and displays detailed information about all planets discovered till now."
@@ -184,7 +184,7 @@
     "name": "Stop-Watch",
     "githubLink": "https://github.com/RAKESH-PATEL57/Stop-Watch?tab=readme-ov-file",
     "liveLink": "https://stop-watch-by-rakesh-patel57-github.netlify.app/",
-    "imageLink": "./images/projects_images/Stop-Watch.png",
+    "imageLink": "./images/projects_images/Stop-Watch.webp",
     "features_Skills": [
       {
         "points": "Fully Responsive: The application is optimized for all devices, from desktops to mobile phones."
@@ -208,7 +208,7 @@
     "name": "Restaurant (Present)",
     "githubLink": "https://github.com/RAKESH-PATEL57/Our-Restaurant-2",
     "liveLink": "https://rakesh-patel57.github.io/Our-Restaurant-2/",
-    "imageLink": "./images/projects_images/restaurant.png",
+    "imageLink": "./images/projects_images/restaurant.webp",
     "features_Skills": [
       {
         "points": "Delight in our visually appealing website offering effortless browsing of our diverse menu and easy reservation-making."
