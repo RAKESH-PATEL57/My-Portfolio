@@ -208,16 +208,19 @@
     "name": "Adavanced-Todo-Web-App-With-Weather-Feature Public (Present)",
     "githubLink": "https://github.com/RAKESH-PATEL57/Adavanced-Todo-Web-App-With-Weather-Feature",
     "liveLink": "https://advanced-todo-weather-feature.netlify.app/",
-    "imageLink": "./images/projects_images/restaurant.webp",
+    "imageLink": "./images/projects_images/AdvanceTODO.webp",
     "features_Skills": [
       {
-        "points": "Delight in our visually appealing website offering effortless browsing of our diverse menu and easy reservation-making."
+        "points": "Task Management: Add tasks, View tasks, Delete tasks, Prioritize tasks."
       },
       {
-        "points": "Embark on a culinary journey enhanced by technology, experiencing the fusion of flavours and web innovation"
+        "points": "Weather Integration: Displays weather updates, Fetches real-time weather data via API."
       },
       {
-        "points": "Tech stack : HTML5, Css3/Scss, Canvas, and JavaScript(ES6)"
+        "points": "Responsive Design: Mobile-first layout, Seamless experience across devices."
+      },
+      {
+        "points": "Tech stack : ReactJS, Css3, Weather API Integration"
       }
     ]
   },
